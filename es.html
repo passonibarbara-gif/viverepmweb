@@ -399,6 +399,67 @@
     .trust-strip-inner{flex-direction:column; align-items:flex-start; gap:8px;}
     .trust-strip .trust-pill{border-right:none; padding:2px 0;}
   }
+
+/* ViverePM · Mediterranean editorial homepage, phase 1 */
+:root{--cream:#FBF8F2;--cream-2:#F1EBDD;--paper:#FFFEFA;--ink:#183D36;--green-deep:#173D36;--green:#24594F;--gold:#B88749;--gold-deep:#996B35;--line:#E2D9CB;--shadow:0 16px 44px rgba(23,61,54,.08)}
+.site-nav,.site-nav.scrolled{background:rgba(255,254,250,.97);border-bottom:1px solid rgba(23,61,54,.08);padding:12px 24px;box-shadow:0 2px 18px rgba(23,61,54,.045);backdrop-filter:blur(12px)}
+.site-nav .brand,.site-nav.scrolled .brand,.site-nav .brand-mark,.site-nav.scrolled .brand-mark{color:var(--green-deep)}
+.site-nav .brand-sub,.site-nav.scrolled .brand-sub{color:var(--gold-deep)}
+.site-nav .nav-links a,.site-nav.scrolled .nav-links a,.site-nav .lang-switch a,.site-nav.scrolled .lang-switch a{color:var(--green-deep)}
+.site-nav .lang-switch .sep{color:var(--line)}
+.site-nav .lang-switch a.is-active{color:var(--gold-deep)}
+.site-nav .nav-cta,.site-nav.scrolled .nav-cta{opacity:1;transform:none;pointer-events:auto;background:var(--green-deep);color:white}
+.site-nav-inner{flex-wrap:nowrap}
+.hero{min-height:clamp(620px,83vh,850px);align-items:center;padding-top:74px}
+.hero::before{background:linear-gradient(90deg,rgba(252,250,245,.97) 0%,rgba(252,250,245,.88) 30%,rgba(252,250,245,.28) 59%,rgba(10,24,20,.12) 100%),linear-gradient(0deg,rgba(9,30,25,.56),transparent 35%)}
+.hero-inner{padding:90px 24px 145px;color:var(--green-deep)}
+.hero h1{color:var(--green-deep);font-size:clamp(40px,5.7vw,74px);max-width:760px;text-shadow:none}
+.hero h1 .gold-line{color:var(--gold-deep);font-style:italic}
+.hero .eyebrow{color:var(--green);text-shadow:none}
+.hero p.lead{color:#263F3A;max-width:510px;font-size:clamp(16px,1.6vw,19px);font-weight:400;text-shadow:none}
+.hero-ctas{gap:12px}
+.hero-ctas .btn-primary{background:var(--green-deep)}
+.btn-secondary{border:1.5px solid var(--green-deep);border-radius:100px;padding:15px 25px;background:rgba(255,255,255,.85);text-decoration:none;font-weight:600;font-size:13.5px;color:var(--green-deep);transition:background .2s,transform .2s}
+.btn-secondary:hover{background:white;transform:translateY(-2px)}
+.hero-quote{right:5%;bottom:155px;font-size:clamp(25px,3vw,38px)}
+.trust-strip{position:relative;z-index:4;margin-top:-105px;background:linear-gradient(90deg,rgba(15,50,42,.89),rgba(15,50,42,.62));border:0;padding:22px 24px;min-height:105px}
+.trust-strip .trust-pill{flex:1;justify-content:center;border-color:rgba(255,255,255,.25);padding:8px 18px}
+.trust-strip .trust-pill .icon{color:#fff;width:23px;height:23px}
+.trust-strip .trust-pill span{color:#fff;font-size:12px;letter-spacing:.02em;text-transform:none}
+.editorial-services{padding-top:70px}
+.editorial-services .section-sub{margin-bottom:38px}
+.editorial-services .pain-grid{max-width:1120px;gap:28px}
+.editorial-services .pain-card,.editorial-services .solution-card{padding:0;background:var(--paper);border:1px solid var(--line);border-radius:13px;overflow:hidden;box-shadow:none;color:var(--ink)}
+.editorial-services .pain-card h3,.editorial-services .solution-card h3{color:var(--green-deep);padding:0 27px;font-size:clamp(21px,2.3vw,29px);margin:25px 0 12px}
+.editorial-services .pain-card ul,.editorial-services .solution-card ul{color:var(--ink-soft);padding:0 30px 25px 46px;font-weight:400}
+.editorial-services .pain-card li,.editorial-services .solution-card li{margin-bottom:7px}
+.editorial-card-image{width:100%;height:230px;object-fit:cover;display:block}
+.editorial-services .section-title{max-width:900px;margin-left:auto;margin-right:auto}
+.mobile-nav{display:none}
+@media(max-width:1100px){.site-nav-inner{gap:10px}.nav-links{gap:10px}.nav-links a{font-size:10px}.nav-cta{font-size:10px;padding:10px 13px}}
+@media(max-width:760px){
+ .site-nav,.site-nav.scrolled{padding:10px 16px}
+ .nav-links{display:none}
+ .mobile-nav{display:block;position:relative;margin-left:auto}
+ .mobile-nav summary{list-style:none;border:1px solid var(--line);padding:9px 13px;border-radius:30px;font-size:13px;cursor:pointer;color:var(--green-deep)}
+ .mobile-nav summary::-webkit-details-marker{display:none}
+ .mobile-nav-panel{position:absolute;right:0;top:calc(100% + 12px);min-width:215px;padding:14px;background:var(--paper);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:11px}
+ .mobile-nav-panel a{font-size:13px;text-decoration:none;color:var(--green-deep)}
+ .site-nav .nav-cta{display:none}
+ .hero{min-height:690px;padding-top:65px;align-items:flex-start}
+ .hero::before{background:linear-gradient(180deg,rgba(252,250,245,.98) 0%,rgba(252,250,245,.86) 45%,rgba(20,40,32,.08) 80%,rgba(10,35,29,.67) 100%)}
+ .hero-inner{padding:70px 20px 165px}
+ .hero h1{font-size:clamp(39px,8.8vw,58px)}
+ .hero-quote{position:absolute;bottom:115px;right:22px;left:auto;text-align:right;color:#fff;font-size:27px}
+ .hero-quote .underline{margin-left:auto}
+ .trust-strip{margin-top:-1px;padding:15px 18px}
+ .trust-strip-inner{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .trust-strip .trust-pill{justify-content:flex-start;padding:5px;border:0}
+ .editorial-services .pain-grid{grid-template-columns:1fr}
+ .editorial-card-image{height:215px}
+}
+@media(max-width:420px){.hero-ctas{align-items:stretch}.hero-ctas .btn-primary,.hero-ctas .btn-secondary{justify-content:center}.hero-quote{font-size:23px;bottom:120px}.trust-strip .trust-pill span{font-size:11px}}
+
 </style>
 </head>
 <body>
@@ -448,6 +509,7 @@
       <a href="index.html" hreflang="it" lang="it">IT</a><span class="sep">·</span><a href="en.html" hreflang="en" lang="en">EN</a><span class="sep">·</span><a href="fr.html" hreflang="fr" lang="fr">FR</a><span class="sep">·</span><a href="es.html" class="is-active" hreflang="es" lang="es">ES</a><span class="sep">·</span><a href="mt.html" hreflang="mt" lang="mt">MT</a>
     </nav>
   </div>
+  <details class="mobile-nav"><summary>Menú ☰</summary><div class="mobile-nav-panel"><a href="#servizi">Servicios</a><a href="#come-funziona">Cómo funciona</a><a href="#faq">Preguntas frecuentes</a><a href="https://app.viverepm.it/">¿Ya eres cliente? Acceder</a><a href="index.html" lang="it">IT</a><a href="en.html" lang="en">EN</a><a href="fr.html" lang="fr">FR</a><a href="es.html" lang="es">ES</a><a href="mt.html" lang="mt">MT</a></div></details>
   <a class="nav-cta" href="#contatti">Solicita una valoración</a>
 </div></nav>
 
@@ -465,6 +527,7 @@
           <span class="btn-primary-sub"><b>Contáctanos ahora</b><small>Para una primera valoración gratuita</small></span>
           <svg class="icon" style="margin-left:6px;"><use href="#i-arrow"></use></svg>
         </a>
+        <a class="btn-secondary" href="#come-funziona">Descubre cómo trabajamos →</a>
       </div>
     </div>
   </div>
@@ -480,38 +543,12 @@
   </div>
 </div>
 
-<section class="reveal">
-  <div class="section-tag-wrap"><span class="section-tag">El problema</span></div>
-  <h2 class="section-title">¿Tienes una propiedad en Sicilia pero vives en otro lugar?</h2>
-  <p class="section-sub">Entre documentos por renovar, vencimientos que no olvidar y mantenimiento que seguir, gestionar una propiedad a distancia es complicado. Basta un imprevisto sin atender para crear problemas serios.</p>
-  <div class="pain-grid">
-    <div class="pain-card">
-      <h3><svg class="icon" style="width:20px;height:20px;color:var(--terracotta)"><use href="#i-alert"></use></svg> Sin un gestor</h3>
-      <ul>
-        <li>Los vencimientos fiscales, de seguros o administrativos pueden pasarte desapercibidos</li>
-        <li>No sabes quién controla realmente la propiedad cuando está vacía</li>
-        <li>Mantenimiento gestionado con retraso, o directamente no gestionado</li>
-        <li>Ninguna forma sencilla de verificar el trabajo realizado</li>
-      </ul>
-    </div>
-    <div class="solution-card">
-      <h3><svg class="icon" style="width:20px;height:20px;color:var(--gold)"><use href="#i-check"></use></svg> Con nosotros</h3>
-      <ul>
-        <li>Controlamos documentos y vencimientos y te avisamos a tiempo</li>
-        <li>Controles periódicos regulares, incluso cuando la propiedad está vacía</li>
-        <li>Intervenciones programadas, con presupuestos que apruebas tú</li>
-        <li>Cada trabajo es verificable desde tu área privada</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="alt-bg reveal">
+<section class="editorial-services reveal">
   <div class="section-tag-wrap"><span class="section-tag">Dos niveles de servicio</span></div>
-  <h2 class="section-title">Custodia siempre, alquiler si tú quieres</h2>
-  <p class="section-sub">La gestión básica cubre documentos, vencimientos y mantenimiento. Si además quieres generar ingresos, también nos ocupamos de alquilarla.</p>
+  <h2 class="section-title">Dos formas de cuidar tu casa. Un solo aliado.</h2>
+  <p class="section-sub">Elige el servicio que necesitas. Nosotros nos encargamos del resto.</p>
   <div class="pain-grid">
-    <div class="pain-card">
+    <div class="pain-card"><img class="editorial-card-image" src="hero-terrazza.jpg" alt="" loading="lazy">
       <h3 style="color:var(--green);"><svg class="icon" style="width:20px;height:20px;color:var(--green)"><use href="#i-house-check"></use></svg> Custodia y gestión</h3>
       <ul>
         <li>Documentos, seguros y vencimientos siempre controlados</li>
@@ -520,7 +557,7 @@
         <li>Todo verificable en cualquier momento desde la plataforma</li>
       </ul>
     </div>
-    <div class="solution-card">
+    <div class="solution-card"><img class="editorial-card-image" src="collage-servizi.jpg" alt="" loading="lazy">
       <h3><svg class="icon" style="width:20px;height:20px;color:var(--gold)"><use href="#i-key"></use></svg> ¿Quieres alquilarla también?</h3>
       <ul>
         <li>Además, gestionamos reservas, calendario y huéspedes por ti</li>
