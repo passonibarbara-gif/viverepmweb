@@ -555,6 +555,36 @@
 }
 @media(max-width:760px){.hero h1 .gold-line{white-space:normal}}
 
+
+/* Final header fix: explicit right-side group, no inherited language top margin */
+@media(min-width:761px){
+ .site-nav-inner{display:flex!important;flex-wrap:nowrap!important;align-items:center!important;justify-content:space-between!important;gap:clamp(12px,2vw,35px)!important;max-width:1480px!important}
+ .site-nav-inner>.brand-lockup{flex:0 0 auto!important}
+ .site-nav-inner>.nav-links{display:flex!important;flex:1 1 auto!important;min-width:0!important;align-items:center!important;justify-content:center!important;flex-wrap:nowrap!important;gap:clamp(12px,1.6vw,25px)!important}
+ .site-nav-inner>.nav-links>a{white-space:nowrap!important}
+ .site-nav-inner>.nav-right{display:flex!important;flex:0 0 auto!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(12px,1.5vw,23px)!important;white-space:nowrap!important}
+ .site-nav-inner>.nav-right>.desktop-lang{display:flex!important;align-items:center!important;justify-content:center!important;margin:0!important;padding:0!important;gap:5px!important;line-height:1!important;align-self:center!important}
+ .site-nav-inner>.nav-right>.link-accedi{font-size:clamp(9px,.7vw,11px);text-transform:uppercase;font-weight:600;text-decoration:none;color:var(--green-deep);letter-spacing:.025em}
+ .site-nav-inner>.nav-right>.link-accedi:before{content:'•';color:var(--tiffany);margin-right:7px}
+ .site-nav-inner>.nav-right>.nav-cta{margin:0!important;flex:none!important;white-space:nowrap!important}
+ .hero .hero-grid{max-width:1340px!important;width:100%!important}
+ .hero .hero-grid h1{max-width:1100px!important;width:100%!important;font-size:clamp(43px,3.6vw,58px)!important;line-height:1.12!important}
+ .hero .hero-grid h1>.gold-line{display:block!important;white-space:nowrap!important;font-size:.84em!important;letter-spacing:-.015em!important}
+}
+@media(min-width:761px) and (max-width:1200px){
+ .site-nav-inner{gap:10px!important}
+ .site-nav-inner>.nav-links{gap:9px!important}
+ .site-nav-inner>.nav-links>a{font-size:9px!important}
+ .site-nav-inner>.nav-right{gap:9px!important}
+ .site-nav-inner>.nav-right>.link-accedi{font-size:9px}
+ .site-nav-inner>.nav-right>.nav-cta{font-size:9px!important;padding:10px 11px!important}
+ .hero .hero-grid h1{font-size:clamp(38px,4vw,49px)!important}
+}
+@media(max-width:760px){
+ .site-nav-inner>.nav-right{display:none!important}
+ .hero .hero-grid h1>.gold-line{white-space:normal!important}
+}
+
 </style>
 </head>
 <body>
@@ -599,13 +629,15 @@
     <a href="#servizi">Servizi</a>
     <a href="#come-funziona">Come funziona</a>
     <a href="#faq">Domande frequenti</a>
-    <a href="https://app.viverepm.it/" class="link-accedi">Sei già cliente? Accedi</a>
   </div>
   <details class="mobile-nav"><summary>Menu ☰</summary><div class="mobile-nav-panel"><a href="#servizi">Servizi</a><a href="#come-funziona">Come funziona</a><a href="#faq">Domande frequenti</a><a href="https://app.viverepm.it/">Sei già cliente? Accedi</a><a href="index.html" lang="it">IT</a><a href="en.html" lang="en">EN</a><a href="fr.html" lang="fr">FR</a><a href="es.html" lang="es">ES</a><a href="mt.html" lang="mt">MT</a></div></details>
+  <div class="nav-right">
   <nav class="lang-switch desktop-lang" aria-label="Seleziona lingua">
       <a href="index.html" class="is-active" hreflang="it" lang="it">IT</a><span class="sep">·</span><a href="en.html" hreflang="en" lang="en">EN</a><span class="sep">·</span><a href="fr.html" hreflang="fr" lang="fr">FR</a><span class="sep">·</span><a href="es.html" hreflang="es" lang="es">ES</a><span class="sep">·</span><a href="mt.html" hreflang="mt" lang="mt">MT</a>
     </nav>
+  <a href="https://app.viverepm.it/" class="link-accedi">Sei già cliente? Accedi</a>
   <a class="nav-cta" href="#contatti">Richiedi una valutazione</a>
+  </div>
 </div></nav>
 
 <header class="hero reveal">
