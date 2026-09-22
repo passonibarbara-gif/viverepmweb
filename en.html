@@ -460,6 +460,48 @@
 }
 @media(max-width:420px){.hero-ctas{align-items:stretch}.hero-ctas .btn-primary,.hero-ctas .btn-secondary{justify-content:center}.hero-quote{font-size:23px;bottom:120px}.trust-strip .trust-pill span{font-size:11px}}
 
+
+/* Phase 1 refinement: compact single-line header and balanced photographic hero */
+@media(min-width:761px){
+ .site-nav,.site-nav.scrolled{padding:10px 24px}
+ .site-nav-inner{max-width:1440px;display:grid;grid-template-columns:minmax(175px,215px) minmax(0,1fr) auto;gap:clamp(12px,2vw,32px);align-items:center;flex-wrap:nowrap}
+ .brand-lockup{min-width:0;gap:9px}
+ .brand-mark{width:31px;height:31px}
+ .brand{font-family:'Playfair Display',serif;font-size:25px;font-weight:600;letter-spacing:.005em}
+ .brand-sub{font-size:8px;letter-spacing:.24em;white-space:nowrap}
+ .nav-links{display:flex;flex-wrap:nowrap;justify-content:center;gap:clamp(9px,1.5vw,24px);min-width:0}
+ .nav-links>a{white-space:nowrap;font-size:clamp(9px,.72vw,11.5px);letter-spacing:.015em}
+ .nav-links .lang-switch{flex:none;white-space:nowrap;gap:6px}
+ .nav-links .lang-switch a{font-size:10px}
+ .nav-cta,.site-nav.scrolled .nav-cta{white-space:nowrap;padding:11px 19px;font-size:10px}
+ .hero{min-height:clamp(620px,78vh,800px)}
+ .hero-inner{padding:104px 24px 150px}
+ .hero-grid{max-width:1340px}
+ .hero h1{font-size:clamp(43px,4.5vw,66px);line-height:1.12;max-width:960px;margin-bottom:22px}
+ .hero h1 .gold-line{white-space:nowrap}
+ .hero p.lead{max-width:530px}
+ .hero-quote{right:max(6%,calc((100vw - 1340px)/2));bottom:145px;max-width:250px;font-size:clamp(26px,2.6vw,35px)}
+ .trust-strip{margin-top:-100px;min-height:100px;padding:17px 24px}
+ .trust-strip-inner{max-width:1100px}
+ .trust-strip .trust-pill{padding:7px 20px;gap:10px}
+ .trust-strip .trust-pill span{font-size:11px}
+}
+@media(min-width:761px) and (max-width:1130px){
+ .site-nav-inner{grid-template-columns:175px minmax(0,1fr) auto;gap:12px}
+ .nav-links{gap:9px}
+ .nav-links>a{font-size:9px}
+ .nav-links .lang-switch{gap:3px}
+ .nav-cta,.site-nav.scrolled .nav-cta{padding:10px 12px;font-size:9px}
+ .hero h1{font-size:clamp(42px,4.6vw,54px)}
+}
+@media(max-width:760px){
+ .brand{font-family:'Playfair Display',serif;font-size:23px}
+ .brand-mark{width:29px;height:29px}
+ .hero h1{font-size:clamp(36px,8vw,54px);max-width:100%}
+ .hero-quote{right:28px;bottom:116px;max-width:210px;font-size:clamp(23px,6vw,29px)}
+ .trust-strip-inner{max-width:500px}
+}
+
 </style>
 </head>
 <body>
