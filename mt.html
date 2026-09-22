@@ -652,6 +652,19 @@
 @media(max-width:900px){.owner-story .owner-layout{grid-template-columns:1fr}.owner-benefits{max-width:650px}.owner-story{padding:70px 22px}}
 @media(max-width:490px){.owner-preview-inner{grid-template-columns:100px minmax(0,1fr)}.owner-preview-side{padding:18px 7px}.owner-preview-side strong{font-size:15px}.owner-preview-side span{font-size:9px;padding:8px 4px}.owner-preview-main{padding:18px 11px}.owner-preview-main h3{font-size:19px}.owner-preview-tiles{gap:7px}.owner-preview-tile{padding:12px 8px;min-height:78px}.owner-preview-tile span{font-size:10px}.owner-benefits{grid-template-columns:1fr}.owner-benefits .owner-link{grid-column:1}}
 
+
+/* Group services into three clear owner-focused chapters */
+#servizi .service-clusters{max-width:1160px;margin:44px auto 0;display:grid;gap:36px}
+#servizi .service-cluster{min-width:0}
+#servizi .service-cluster-heading{display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid #d9dfd8;padding:0 0 15px;margin:0 0 16px}
+#servizi .service-cluster-heading h3{font-family:'Playfair Display',serif;font-size:clamp(22px,2vw,28px);color:var(--green-deep);margin:0;line-height:1.3}
+#servizi .service-cluster-heading p{font-size:13px;color:var(--ink-soft);line-height:1.5;margin:0;max-width:360px;text-align:right}
+#servizi .service-cluster:nth-child(2) .service-cluster-heading h3{color:var(--gold-deep)}
+#servizi .service-cluster:nth-child(2) .service-icon{background:#f4ebdd;color:var(--gold-deep)}
+#servizi .service-cluster .services-grid{margin:0;max-width:none}
+#servizi .service-cluster .service-card{height:100%;box-shadow:0 8px 26px rgba(23,61,54,.035)}
+#servizi .service-cluster .service-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(23,61,54,.09)}
+@media(max-width:760px){#servizi .service-clusters{gap:30px;margin-top:30px}#servizi .service-cluster-heading{display:block}#servizi .service-cluster-heading p{text-align:left;margin-top:7px}}
 </style>
 </head>
 <body>
@@ -769,18 +782,23 @@
   <div class="section-tag-wrap"><span class="section-tag">X'nagħmlu</span></div>
   <h2 class="section-title">Nieħdu ħsieb kollox, int tibqa' dejjem infurmat</h2>
   <p class="section-sub">Dokumenti, skadenzi, manutenzjoni, mistednin: insegwu kull aspett tal-proprjetà tiegħek fi Sqallija, anke jekk int 'il bogħod, u nagħtuk mod kif tivverifika kollox.</p>
-  <div class="services-grid stagger">
-    <div class="service-card" style="--i:0"><div class="service-icon"><svg class="icon"><use href="#i-document"></use></svg></div><h3>Dokumenti u skadenzi</h3><p>Inżommu taħt kontroll l-assigurazzjonijiet, ċertifikazzjonijiet u obbligi, u nwissuk qabel jiskadu.</p></div>
-    <div class="service-card" style="--i:1"><div class="service-icon"><svg class="icon"><use href="#i-verify"></use></svg></div><h3>Xogħol vverifikat</h3><p>Kull intervent u kontroll jiġi dokumentat: tista' terġa' tara x'sar, u meta, mill-pjattaforma.</p></div>
-    <div class="service-card" style="--i:2"><div class="service-icon"><svg class="icon"><use href="#i-pin"></use></svg></div><h3>Ġestjoni mill-bogħod</h3><p>M'hemmx bżonn tkun preżenti: aħna fuq il-post fi Sqallija, int issegwi kollox komdament mill-bogħod.</p></div>
-    <div class="service-card" style="--i:3"><div class="service-icon"><svg class="icon"><use href="#i-tool"></use></svg></div><h3>Manutenzjoni u interventi</h3><p>Nibagħtulek l-estimi biex tapprova qabel kull intervent: int tiddeċiedi, mingħajr sorpriżi fil-kont.</p></div>
-    <div class="service-card" style="--i:4"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Kontrolli perjodiċi</h3><p>Nivverifikaw regolarment l-istat tal-proprjetà, biex tibqa' kurata anke meta ma tarahiex.</p></div>
-    <div class="service-card" style="--i:5"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Ġestjoni ta' prenotazzjonijiet</h3><p>Nieħdu ħsieb il-kalendarju, it-talbiet u l-komunikazzjoni mal-mistednin mill-bidu sal-aħħar tas-soġġorn.</p></div>
-    <div class="service-card" style="--i:6"><div class="service-icon"><svg class="icon"><use href="#i-wallet"></use></svg></div><h3>Nefqiet u qligħ</h3><p>Kull nefqa u kull dħul jiġi rrekordjat u disponibbli, mingħajr kalkoli x'issir fl-aħħar tax-xahar.</p></div>
-    <div class="service-card" style="--i:7"><div class="service-icon"><svg class="icon"><use href="#i-grid"></use></svg></div><h3>Dashboard trasparenti</h3><p>Idħol f'kull mument fl-erja riservata tiegħek biex tara l-istat, l-okkupazzjoni u l-attività tal-proprjetà tiegħek.</p></div>
-    <div class="service-card" style="--i:8"><div class="service-icon"><svg class="icon"><use href="#i-chat"></use></svg></div><h3>Messaġġi diretti</h3><p>Kanal dirett mat-tim tagħna għal mistoqsijiet, talbiet jew aġġornamenti, meta trid int.</p></div>
-  </div>
-  
+<div class="service-clusters">
+<div class="service-cluster"><div class="service-cluster-heading"><h3>01 · Kura tal-proprjetà</h3><p>Nieħdu ħsieb kull dettall tad-dar tiegħek fuq il-post.</p></div><div class="services-grid stagger">
+<div class="service-card" style="--i:0"><div class="service-icon"><svg class="icon"><use href="#i-document"></use></svg></div><h3>Dokumenti u skadenzi</h3><p>Inżommu taħt kontroll l-assigurazzjonijiet, ċertifikazzjonijiet u obbligi, u nwissuk qabel jiskadu.</p></div>
+<div class="service-card" style="--i:3"><div class="service-icon"><svg class="icon"><use href="#i-tool"></use></svg></div><h3>Manutenzjoni u interventi</h3><p>Nibagħtulek l-estimi biex tapprova qabel kull intervent: int tiddeċiedi, mingħajr sorpriżi fil-kont.</p></div>
+<div class="service-card" style="--i:4"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Kontrolli perjodiċi</h3><p>Nivverifikaw regolarment l-istat tal-proprjetà, biex tibqa' kurata anke meta ma tarahiex.</p></div>
+</div></div>
+<div class="service-cluster"><div class="service-cluster-heading"><h3>02 · Ġestjoni u kiri</h3><p>Mill-ġestjoni mill-bogħod sal-mistednin, meta tagħżel li tikri.</p></div><div class="services-grid stagger">
+<div class="service-card" style="--i:2"><div class="service-icon"><svg class="icon"><use href="#i-pin"></use></svg></div><h3>Ġestjoni mill-bogħod</h3><p>M'hemmx bżonn tkun preżenti: aħna fuq il-post fi Sqallija, int issegwi kollox komdament mill-bogħod.</p></div>
+<div class="service-card" style="--i:5"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Ġestjoni ta' prenotazzjonijiet</h3><p>Nieħdu ħsieb il-kalendarju, it-talbiet u l-komunikazzjoni mal-mistednin mill-bidu sal-aħħar tas-soġġorn.</p></div>
+<div class="service-card" style="--i:6"><div class="service-icon"><svg class="icon"><use href="#i-wallet"></use></svg></div><h3>Nefqiet u qligħ</h3><p>Kull nefqa u kull dħul jiġi rrekordjat u disponibbli, mingħajr kalkoli x'issir fl-aħħar tax-xahar.</p></div>
+</div></div>
+<div class="service-cluster"><div class="service-cluster-heading"><h3>03 · Kontroll u komunikazzjoni</h3><p>Ara x’qed jiġri u żomm kuntatt magħna.</p></div><div class="services-grid stagger">
+<div class="service-card" style="--i:1"><div class="service-icon"><svg class="icon"><use href="#i-verify"></use></svg></div><h3>Xogħol vverifikat</h3><p>Kull intervent u kontroll jiġi dokumentat: tista' terġa' tara x'sar, u meta, mill-pjattaforma.</p></div>
+<div class="service-card" style="--i:7"><div class="service-icon"><svg class="icon"><use href="#i-grid"></use></svg></div><h3>Dashboard trasparenti</h3><p>Idħol f'kull mument fl-erja riservata tiegħek biex tara l-istat, l-okkupazzjoni u l-attività tal-proprjetà tiegħek.</p></div>
+<div class="service-card" style="--i:8"><div class="service-icon"><svg class="icon"><use href="#i-chat"></use></svg></div><h3>Messaġġi diretti</h3><p>Kanal dirett mat-tim tagħna għal mistoqsijiet, talbiet jew aġġornamenti, meta trid int.</p></div>
+</div></div>
+</div>
 </section>
 
 <section class="owner-story reveal" id="area-proprietari"><div class="owner-intro"><span class="section-tag">Iż-żona privata tiegħek</span><h2 class="section-title">Darek. Id-deċiżjonijiet tiegħek. Kollox quddiemek.</h2><p class="section-sub">Spazju wieħed biex issegwi l-ġestjoni tal-proprjetà tiegħek mill-bogħod. Din hija dehra illustrattiva tal-funzjonijiet, mingħajr dejta personali jew bookings ivvintati.</p></div><div class="owner-layout"><div class="owner-preview" aria-label="Żona tas-sid · dehra illustrattiva"><div class="owner-preview-bar"><i></i><i></i><i></i><span>Żona tas-sid · dehra illustrattiva</span></div><div class="owner-preview-inner"><div class="owner-preview-side"><strong>ViverePM</strong><span>Ħarsa lejn il-proprjetà</span><span>Attivitajiet u dokumenti</span></div><div class="owner-preview-main"><h3>Ħarsa lejn il-proprjetà</h3><p>Attivitajiet u dokumenti</p><div class="owner-preview-tiles"><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><span>Bookings</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-wallet"></use></svg><span>Dħul u spejjeż</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-tool"></use></svg><span>Manutenzjoni</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg><span>Messaġġi</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-document"></use></svg><span>Dokumenti</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><span>Dati personali</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-verify"></use></svg><span>Spezzjonijiet u manutenzjoni</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-grid"></use></svg><span>Segwi l-attivitajiet irreġistrati u l-aġġornamenti tal-proprjetà.</span></div></div></div></div></div><div class="owner-benefits"><div class="owner-benefit"><span class="owner-benefit-num">01</span><h3>Stimi għall-approvazzjoni</h3><p>Ara l-proposti qabel tawtorizza x-xogħol miftiehem.</p></div><div class="owner-benefit"><span class="owner-benefit-num">02</span><h3>Kalendarju u bookings</h3><p>Ara ż-żjarat u ibblokka dati għall-użu personali.</p></div><div class="owner-benefit"><span class="owner-benefit-num">03</span><h3>Rapporti u dokumenti</h3><p>Ara d-dħul, l-ispejjeż u l-fajls tal-proprjetà tiegħek.</p></div><div class="owner-benefit"><span class="owner-benefit-num">04</span><h3>Idħol fiż-żona privata</h3><p>Dehra illustrattiva tal-funzjonijiet. Id-dejta reali tidher biss wara li tidħol.</p></div><a class="owner-link" href="https://app.viverepm.it/">undefined <span aria-hidden="true">→</span></a></div></div><p class="owner-preview-note">undefined</p></section>
