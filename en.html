@@ -619,6 +619,39 @@
 }
 @media(min-width:761px) and (max-width:950px){#recensioni .promise-grid{gap:10px}#recensioni .promise-item{padding:22px}}
 
+
+/* Owner portal story: intentionally illustrative, no fabricated account metrics */
+.owner-story{padding:95px 24px;background:var(--cream-2);overflow:hidden}
+.owner-story .owner-intro{text-align:center;max-width:790px;margin:0 auto 40px}
+.owner-story .owner-intro .section-title{margin:12px auto 16px}
+.owner-story .owner-intro .section-sub{max-width:720px}
+.owner-story .owner-layout{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}
+.owner-preview{background:#fff;border:1px solid rgba(29,64,57,.14);box-shadow:0 24px 60px rgba(18,54,47,.12);border-radius:20px;overflow:hidden}
+.owner-preview-bar{display:flex;align-items:center;gap:7px;padding:16px 19px;border-bottom:1px solid #e7ebe8}
+.owner-preview-bar i{width:8px;height:8px;border-radius:50%;background:#d5dcd6}
+.owner-preview-bar span{margin-left:auto;color:#73817b;font-size:10px;letter-spacing:.05em}
+.owner-preview-inner{display:grid;grid-template-columns:140px minmax(0,1fr);min-height:315px}
+.owner-preview-side{background:var(--green-deep);padding:24px 13px;color:white}
+.owner-preview-side strong{display:block;font-family:'Playfair Display',serif;font-size:19px;margin-bottom:25px}
+.owner-preview-side span{display:block;font-size:11px;line-height:1.4;padding:10px 8px;border-radius:7px;color:#d7e6df}
+.owner-preview-side span:first-of-type{background:rgba(255,255,255,.14);color:#fff}
+.owner-preview-main{padding:25px 23px}
+.owner-preview-main h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--green-deep);margin:0 0 7px}
+.owner-preview-main>p{color:#7d8a83;font-size:12px;margin:0 0 22px}
+.owner-preview-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.owner-preview-tile{border:1px solid #e7eae6;border-radius:12px;padding:18px 13px;background:#fafaf7;min-height:88px}
+.owner-preview-tile svg{width:21px;height:21px;color:var(--gold-deep);display:block;margin-bottom:12px}
+.owner-preview-tile span{font-size:12px;color:var(--green-deep);font-weight:600}
+.owner-benefits{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.owner-benefit{padding:0 0 17px;border-bottom:1px solid #d8dfd8}
+.owner-benefit .owner-benefit-num{color:var(--gold-deep);font-size:11px;letter-spacing:.18em;font-weight:700}
+.owner-benefit h3{font-family:'Playfair Display',serif;font-size:20px;line-height:1.25;color:var(--green-deep);margin:9px 0}
+.owner-benefit p{font-size:13px;line-height:1.65;color:var(--ink-soft);margin:0}
+.owner-benefits .owner-link{grid-column:1/-1;display:inline-flex;justify-self:start;align-items:center;gap:12px;padding:15px 22px;border-radius:100px;background:var(--green-deep);color:white;font-size:13px;font-weight:600;text-decoration:none}
+.owner-preview-note{max-width:1180px;margin:16px auto 0;text-align:left;color:#758079;font-size:11px}
+@media(max-width:900px){.owner-story .owner-layout{grid-template-columns:1fr}.owner-benefits{max-width:650px}.owner-story{padding:70px 22px}}
+@media(max-width:490px){.owner-preview-inner{grid-template-columns:100px minmax(0,1fr)}.owner-preview-side{padding:18px 7px}.owner-preview-side strong{font-size:15px}.owner-preview-side span{font-size:9px;padding:8px 4px}.owner-preview-main{padding:18px 11px}.owner-preview-main h3{font-size:19px}.owner-preview-tiles{gap:7px}.owner-preview-tile{padding:12px 8px;min-height:78px}.owner-preview-tile span{font-size:10px}.owner-benefits{grid-template-columns:1fr}.owner-benefits .owner-link{grid-column:1}}
+
 </style>
 </head>
 <body>
@@ -750,6 +783,7 @@
   
 </section>
 
+<section class="owner-story reveal" id="area-proprietari"><div class="owner-intro"><span class="section-tag">Your private owner area</span><h2 class="section-title">Your home. Your decisions. Your overview.</h2><p class="section-sub">One place to follow the management of your property from anywhere. The preview below illustrates available features without invented personal data or bookings.</p></div><div class="owner-layout"><div class="owner-preview" aria-label="Owner area · preview"><div class="owner-preview-bar"><i></i><i></i><i></i><span>Owner area · preview</span></div><div class="owner-preview-inner"><div class="owner-preview-side"><strong>ViverePM</strong><span>Property overview</span><span>Activity and documents</span></div><div class="owner-preview-main"><h3>Property overview</h3><p>Activity and documents</p><div class="owner-preview-tiles"><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><span>Bookings</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-wallet"></use></svg><span>Income and expenses</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-tool"></use></svg><span>Maintenance</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg><span>Messages</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-document"></use></svg><span>Documents</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><span>Personal dates</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-verify"></use></svg><span>Inspections and maintenance</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-grid"></use></svg><span>Follow recorded activity and property updates.</span></div></div></div></div></div><div class="owner-benefits"><div class="owner-benefit"><span class="owner-benefit-num">01</span><h3>Quotes awaiting approval</h3><p>Review proposals before authorising agreed work.</p></div><div class="owner-benefit"><span class="owner-benefit-num">02</span><h3>Calendar and bookings</h3><p>Review stays and block dates for personal use.</p></div><div class="owner-benefit"><span class="owner-benefit-num">03</span><h3>Reports and documents</h3><p>Review your property's income, expenses and files.</p></div><div class="owner-benefit"><span class="owner-benefit-num">04</span><h3>Open your private area</h3><p>Illustrative feature preview. Actual data is visible only after sign-in.</p></div><a class="owner-link" href="https://app.viverepm.it/">undefined <span aria-hidden="true">→</span></a></div></div><p class="owner-preview-note">undefined</p></section>
 <section id="come-funziona" class="alt-bg reveal">
   <div class="section-tag-wrap"><span class="section-tag">How it works</span></div>
   <h2 class="section-title">From first contact to property management</h2>
