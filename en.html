@@ -502,6 +502,36 @@
  .trust-strip-inner{max-width:500px}
 }
 
+
+/* Phase 1 final: language selector is a separate desktop header item */
+@media(min-width:761px){
+ .site-nav,.site-nav.scrolled{padding:10px 22px}
+ .site-nav-inner{max-width:1480px;width:100%;display:flex;align-items:center;justify-content:space-between;gap:clamp(10px,1.4vw,25px);flex-wrap:nowrap}
+ .brand-lockup{flex:0 0 auto}
+ .brand-mark{width:34px;height:34px}
+ .brand{font-size:27px}
+ .nav-links{flex:1 1 auto;min-width:0;display:flex;align-items:center;justify-content:center;flex-wrap:nowrap;gap:clamp(9px,1.45vw,23px)}
+ .nav-links>a{font-size:clamp(9px,.72vw,11px);white-space:nowrap}
+ .desktop-lang{flex:0 0 auto;display:flex;align-items:center;gap:5px;white-space:nowrap}
+ .desktop-lang a{font-size:10px}
+ .nav-cta,.site-nav.scrolled .nav-cta{flex:0 0 auto;padding:11px clamp(12px,1.4vw,21px)}
+ .hero h1{font-size:clamp(40px,4.1vw,59px);max-width:1080px;line-height:1.12}
+ .hero h1 .gold-line{white-space:nowrap}
+}
+@media(min-width:761px) and (max-width:1150px){
+ .site-nav-inner{gap:9px}
+ .brand{font-size:23px}
+ .brand-sub{font-size:7px}
+ .brand-mark{width:28px;height:28px}
+ .nav-links{gap:8px}
+ .nav-links>a{font-size:9px}
+ .desktop-lang{gap:3px}
+ .desktop-lang a{font-size:9px}
+ .nav-cta,.site-nav.scrolled .nav-cta{font-size:9px;padding:10px 11px}
+ .hero h1{font-size:clamp(39px,4.2vw,49px)}
+}
+@media(max-width:760px){.desktop-lang{display:none}}
+
 </style>
 </head>
 <body>
@@ -547,11 +577,11 @@
     <a href="#come-funziona">How it works</a>
     <a href="#faq">FAQ</a>
     <a href="https://app.viverepm.it/" class="link-accedi">Already a client? Log in</a>
-    <nav class="lang-switch" aria-label="Seleziona lingua">
-      <a href="index.html" hreflang="it" lang="it">IT</a><span class="sep">·</span><a href="en.html" class="is-active" hreflang="en" lang="en">EN</a><span class="sep">·</span><a href="fr.html" hreflang="fr" lang="fr">FR</a><span class="sep">·</span><a href="es.html" hreflang="es" lang="es">ES</a><span class="sep">·</span><a href="mt.html" hreflang="mt" lang="mt">MT</a>
-    </nav>
   </div>
   <details class="mobile-nav"><summary>Menu ☰</summary><div class="mobile-nav-panel"><a href="#servizi">Services</a><a href="#come-funziona">How it works</a><a href="#faq">FAQ</a><a href="https://app.viverepm.it/">Already a client? Log in</a><a href="index.html" lang="it">IT</a><a href="en.html" lang="en">EN</a><a href="fr.html" lang="fr">FR</a><a href="es.html" lang="es">ES</a><a href="mt.html" lang="mt">MT</a></div></details>
+  <nav class="lang-switch desktop-lang" aria-label="Seleziona lingua">
+      <a href="index.html" hreflang="it" lang="it">IT</a><span class="sep">·</span><a href="en.html" class="is-active" hreflang="en" lang="en">EN</a><span class="sep">·</span><a href="fr.html" hreflang="fr" lang="fr">FR</a><span class="sep">·</span><a href="es.html" hreflang="es" lang="es">ES</a><span class="sep">·</span><a href="mt.html" hreflang="mt" lang="mt">MT</a>
+    </nav>
   <a class="nav-cta" href="#contatti">Request an assessment</a>
 </div></nav>
 
