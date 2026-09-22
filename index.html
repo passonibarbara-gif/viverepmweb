@@ -585,6 +585,40 @@
  .hero .hero-grid h1>.gold-line{white-space:normal!important}
 }
 
+
+/* Phase 2: two clear property-owner paths, no tiny-text image collage */
+.editorial-services .pain-grid{max-width:1160px;gap:25px;align-items:stretch}
+.editorial-services .pain-card,.editorial-services .solution-card{display:flex;flex-direction:column;box-shadow:0 14px 38px rgba(23,61,54,.065);transition:transform .25s ease,box-shadow .25s ease}
+.editorial-services .pain-card:hover,.editorial-services .solution-card:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(23,61,54,.12)}
+.editorial-services .editorial-card-image{height:280px;object-fit:cover}
+.editorial-services .solution-card .editorial-card-image{object-position:center 62%}
+.editorial-services .service-card-body{padding:30px 32px 32px;display:flex;flex:1;flex-direction:column}
+.editorial-services .service-number{color:var(--gold-deep);text-transform:uppercase;font-size:10px;letter-spacing:.2em;font-weight:700}
+.editorial-services .pain-card h3,.editorial-services .solution-card h3{padding:0;margin:12px 0 11px;font-size:clamp(24px,2.3vw,33px);line-height:1.2;display:block}
+.editorial-services .service-card-intro{font-size:15px;color:var(--ink-soft);line-height:1.65;margin:0 0 17px}
+.editorial-services .pain-card ul,.editorial-services .solution-card ul{padding:0 0 0 19px;margin:0 0 25px;font-size:14px;line-height:1.6;flex:1}
+.editorial-services .service-path-cta{display:inline-flex;align-self:flex-start;align-items:center;gap:12px;text-decoration:none;background:var(--green-deep);color:white;border-radius:100px;padding:13px 20px;font-size:13px;font-weight:600;transition:background .2s,transform .2s}
+.editorial-services .solution-card .service-path-cta{background:var(--gold-deep)}
+.editorial-services .service-path-cta:hover{transform:translateY(-2px);background:var(--green)}
+#servizi .services-grid{max-width:1160px;gap:16px}
+#servizi .service-card{padding:29px 22px;text-align:left;border:1px solid var(--line);border-radius:14px;background:var(--paper);transition:transform .25s,box-shadow .25s}
+#servizi .service-card:hover{box-shadow:var(--shadow)}
+#servizi .service-icon{margin:0 0 18px;width:49px;height:49px}
+#servizi .service-card h3{font-size:19px;color:var(--green-deep)}
+#servizi .service-card p{font-size:13.5px;line-height:1.65}
+#recensioni .promise-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1100px;margin:0 auto}
+#recensioni .promise-item{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px}
+#recensioni .promise-icon{width:43px;height:43px;background:var(--cream-2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--green-deep);margin-bottom:17px}
+#recensioni .promise-item h3{font-family:'Playfair Display',serif;font-size:21px;color:var(--green-deep);margin:0 0 10px}
+#recensioni .promise-item p{color:var(--ink-soft);font-size:14px;line-height:1.6;margin:0}
+@media(max-width:760px){
+ .editorial-services .editorial-card-image{height:220px}
+ .editorial-services .service-card-body{padding:25px 22px}
+ #servizi .services-grid{grid-template-columns:1fr}
+ #recensioni .promise-grid{grid-template-columns:1fr}
+}
+@media(min-width:761px) and (max-width:950px){#recensioni .promise-grid{gap:10px}#recensioni .promise-item{padding:22px}}
+
 </style>
 </head>
 <body>
@@ -676,22 +710,24 @@
   <p class="section-sub">Scegli il percorso più adatto a te. Al resto pensiamo noi.</p>
   <div class="pain-grid">
     <div class="pain-card"><img class="editorial-card-image" src="hero-terrazza.jpg" alt="" loading="lazy">
-      <h3 style="color:var(--green);"><svg class="icon" style="width:20px;height:20px;color:var(--green)"><use href="#i-house-check"></use></svg> Custodia e gestione</h3>
+      <div class="service-card-body"><span class="service-number">01 · Custodia</span><h3>La tua casa, sempre curata</h3><p class="service-card-intro">La gestione quotidiana dell’immobile, anche quando sei lontano.</p>
       <ul>
         <li>Documenti, assicurazioni e scadenze sempre monitorati</li>
         <li>Controlli periodici e manutenzione programmata</li>
         <li>Interventi con preventivi da approvare tu</li>
         <li>Tutto verificabile in ogni momento dalla piattaforma</li>
       </ul>
+      <a class="service-path-cta" href="#contatti">Scopri la custodia <span aria-hidden="true">→</span></a></div>
     </div>
-    <div class="solution-card"><img class="editorial-card-image" src="collage-servizi.jpg" alt="" loading="lazy">
-      <h3><svg class="icon" style="width:20px;height:20px;color:var(--gold)"><use href="#i-key"></use></svg> Vuoi anche affittarlo?</h3>
+    <div class="solution-card"><img class="editorial-card-image" src="tramonto-cefalu.jpg" alt="" loading="lazy">
+      <div class="service-card-body"><span class="service-number">02 · Affitti vacanze</span><h3>La tua casa può lavorare per te</h3><p class="service-card-intro">Se desideri affittarlo, ci occupiamo anche di ospiti e soggiorni.</p>
       <ul>
         <li>In più, gestiamo prenotazioni, calendario e ospiti per te</li>
         <li>Assistenza agli ospiti 24/7, dall'accoglienza alla partenza</li>
         <li>Incassi e rendiconto sempre tracciati e consultabili</li>
         <li>Decidi tu se e quando attivare l'affitto: nessun obbligo</li>
       </ul>
+      <a class="service-path-cta" href="#contatti">Scopri gli affitti <span aria-hidden="true">→</span></a></div>
     </div>
   </div>
 </section>
@@ -711,12 +747,12 @@
     <div class="service-card" style="--i:7"><div class="service-icon"><svg class="icon"><use href="#i-grid"></use></svg></div><h3>Dashboard trasparente</h3><p>Accedi in ogni momento alla tua area riservata per vedere stato, occupazione e attività del tuo immobile.</p></div>
     <div class="service-card" style="--i:8"><div class="service-icon"><svg class="icon"><use href="#i-chat"></use></svg></div><h3>Messaggistica diretta</h3><p>Un canale diretto con il nostro team per domande, richieste o aggiornamenti, quando vuoi tu.</p></div>
   </div>
-  <div class="showcase-frame"><img src="collage-servizi.jpg" alt="Panoramica dei servizi di gestione: verifiche, manutenzione, pulizie, prenotazioni, report e valorizzazione dell'immobile"></div>
+  
 </section>
 
 <section id="come-funziona" class="alt-bg reveal">
   <div class="section-tag-wrap"><span class="section-tag">Come funziona</span></div>
-  <h2 class="section-title">Dal contatto alla prima prenotazione</h2>
+  <h2 class="section-title">Dal primo contatto alla gestione del tuo immobile</h2>
   <p class="section-sub">Un percorso semplice, pensato per farti risparmiare tempo fin dal primo giorno.</p>
   <div class="steps stagger">
     <div class="step-card" style="--i:0"><span class="step-num">01</span><h3>Ci contatti</h3><p>Compili il modulo o ci scrivi su WhatsApp, anche da fuori Sicilia, con qualche informazione sul tuo immobile.</p></div>
@@ -746,26 +782,11 @@
 </section>
 
 <section id="recensioni" class="reveal">
-  <div class="section-tag-wrap"><span class="section-tag">Chi si è già affidato a noi</span></div>
-  <h2 class="section-title">Cosa dicono i proprietari</h2>
-  <div class="testi-grid">
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <p class="quote">"Vivo fuori dalla Sicilia e non riuscivo a seguire scadenze e manutenzioni del mio appartamento. Ora ricevo solo i report da controllare."</p>
-      <div class="testi-foot"><div class="testi-avatar" style="background:var(--green)">M.R.</div><div class="testi-author">Esempio di testimonianza</div></div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <p class="quote">"Finalmente so sempre cosa succede al mio immobile, anche vivendo lontano: ogni intervento è documentato sulla piattaforma."</p>
-      <div class="testi-foot"><div class="testi-avatar" style="background:var(--terracotta)">A.C.</div><div class="testi-author">Esempio di testimonianza</div></div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <p class="quote">"Non dovevo più preoccuparmi di documenti e scadenze: mi avvisano loro prima che sia un problema."</p>
-      <div class="testi-foot"><div class="testi-avatar" style="background:var(--sage)">G.T.</div><div class="testi-author">Esempio di testimonianza</div></div>
-    </div>
-  </div>
-  <p class="testi-note">* Testi segnaposto: sostituiscili con recensioni reali dei tuoi proprietari prima di pubblicare.</p>
+  <div class="section-tag-wrap"><span class="section-tag">Il nostro impegno</span></div>
+  <h2 class="section-title">Il tuo immobile. Le tue decisioni. Tutto sotto controllo.</h2>
+  <div class="promise-grid"><div class="promise-item"><span class="promise-icon"><svg class="icon"><use href="#i-verify"></use></svg></span><h3>Interventi da autorizzare</h3><p>Valuti i preventivi prima dei lavori concordati.</p></div>
+<div class="promise-item"><span class="promise-icon"><svg class="icon"><use href="#i-document"></use></svg></span><h3>Attività documentate</h3><p>Segui controlli, manutenzioni e aggiornamenti.</p></div>
+<div class="promise-item"><span class="promise-icon"><svg class="icon"><use href="#i-chat"></use></svg></span><h3>Un referente per la tua casa</h3><p>Comunichi direttamente con chi segue l’immobile.</p></div></div>
 </section>
 
 <section id="faq" class="alt-bg reveal">
