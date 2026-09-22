@@ -652,6 +652,19 @@
 @media(max-width:900px){.owner-story .owner-layout{grid-template-columns:1fr}.owner-benefits{max-width:650px}.owner-story{padding:70px 22px}}
 @media(max-width:490px){.owner-preview-inner{grid-template-columns:100px minmax(0,1fr)}.owner-preview-side{padding:18px 7px}.owner-preview-side strong{font-size:15px}.owner-preview-side span{font-size:9px;padding:8px 4px}.owner-preview-main{padding:18px 11px}.owner-preview-main h3{font-size:19px}.owner-preview-tiles{gap:7px}.owner-preview-tile{padding:12px 8px;min-height:78px}.owner-preview-tile span{font-size:10px}.owner-benefits{grid-template-columns:1fr}.owner-benefits .owner-link{grid-column:1}}
 
+
+/* Group services into three clear owner-focused chapters */
+#servizi .service-clusters{max-width:1160px;margin:44px auto 0;display:grid;gap:36px}
+#servizi .service-cluster{min-width:0}
+#servizi .service-cluster-heading{display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid #d9dfd8;padding:0 0 15px;margin:0 0 16px}
+#servizi .service-cluster-heading h3{font-family:'Playfair Display',serif;font-size:clamp(22px,2vw,28px);color:var(--green-deep);margin:0;line-height:1.3}
+#servizi .service-cluster-heading p{font-size:13px;color:var(--ink-soft);line-height:1.5;margin:0;max-width:360px;text-align:right}
+#servizi .service-cluster:nth-child(2) .service-cluster-heading h3{color:var(--gold-deep)}
+#servizi .service-cluster:nth-child(2) .service-icon{background:#f4ebdd;color:var(--gold-deep)}
+#servizi .service-cluster .services-grid{margin:0;max-width:none}
+#servizi .service-cluster .service-card{height:100%;box-shadow:0 8px 26px rgba(23,61,54,.035)}
+#servizi .service-cluster .service-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(23,61,54,.09)}
+@media(max-width:760px){#servizi .service-clusters{gap:30px;margin-top:30px}#servizi .service-cluster-heading{display:block}#servizi .service-cluster-heading p{text-align:left;margin-top:7px}}
 </style>
 </head>
 <body>
@@ -769,18 +782,23 @@
   <div class="section-tag-wrap"><span class="section-tag">Ce que nous faisons</span></div>
   <h2 class="section-title">Nous gérons tout, vous restez toujours informé</h2>
   <p class="section-sub">Documents, échéances, entretien, hôtes : nous suivons chaque aspect de votre bien en Sicile, même si vous êtes loin, et vous permettons de tout vérifier.</p>
-  <div class="services-grid stagger">
-    <div class="service-card" style="--i:0"><div class="service-icon"><svg class="icon"><use href="#i-document"></use></svg></div><h3>Documents et échéances</h3><p>Nous surveillons assurances, certifications et obligations, et vous prévenons avant leur expiration.</p></div>
-    <div class="service-card" style="--i:1"><div class="service-icon"><svg class="icon"><use href="#i-verify"></use></svg></div><h3>Travail vérifiable</h3><p>Chaque intervention et contrôle est documenté : vous pouvez revoir ce qui a été fait, et quand, sur la plateforme.</p></div>
-    <div class="service-card" style="--i:2"><div class="service-icon"><svg class="icon"><use href="#i-pin"></use></svg></div><h3>Gestion à distance</h3><p>Pas besoin d’être présent : nous sommes sur place en Sicile, vous suivez tout confortablement à distance.</p></div>
-    <div class="service-card" style="--i:3"><div class="service-icon"><svg class="icon"><use href="#i-tool"></use></svg></div><h3>Entretien et interventions</h3><p>Nous vous envoyons les devis à valider avant chaque intervention : vous décidez, sans surprise sur la facture.</p></div>
-    <div class="service-card" style="--i:4"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Contrôles périodiques</h3><p>Nous vérifions régulièrement l’état du bien, pour qu’il reste soigné même quand vous ne le voyez pas.</p></div>
-    <div class="service-card" style="--i:5"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Gestion des réservations</h3><p>Nous nous occupons du calendrier, des demandes et de la communication avec les hôtes du début à la fin du séjour.</p></div>
-    <div class="service-card" style="--i:6"><div class="service-icon"><svg class="icon"><use href="#i-wallet"></use></svg></div><h3>Dépenses et revenus</h3><p>Chaque dépense et chaque recette est suivie et consultable, sans calcul à faire en fin de mois.</p></div>
-    <div class="service-card" style="--i:7"><div class="service-icon"><svg class="icon"><use href="#i-grid"></use></svg></div><h3>Tableau de bord transparent</h3><p>Accédez à tout moment à votre espace privé pour voir l’état, l’occupation et l’activité de votre bien.</p></div>
-    <div class="service-card" style="--i:8"><div class="service-icon"><svg class="icon"><use href="#i-chat"></use></svg></div><h3>Messagerie directe</h3><p>Un canal direct avec notre équipe pour vos questions, demandes ou mises à jour, quand vous le souhaitez.</p></div>
-  </div>
-  
+<div class="service-clusters">
+<div class="service-cluster"><div class="service-cluster-heading"><h3>01 · Entretien du bien</h3><p>Chaque détail de votre maison suivi sur place.</p></div><div class="services-grid stagger">
+<div class="service-card" style="--i:0"><div class="service-icon"><svg class="icon"><use href="#i-document"></use></svg></div><h3>Documents et échéances</h3><p>Nous surveillons assurances, certifications et obligations, et vous prévenons avant leur expiration.</p></div>
+<div class="service-card" style="--i:3"><div class="service-icon"><svg class="icon"><use href="#i-tool"></use></svg></div><h3>Entretien et interventions</h3><p>Nous vous envoyons les devis à valider avant chaque intervention : vous décidez, sans surprise sur la facture.</p></div>
+<div class="service-card" style="--i:4"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Contrôles périodiques</h3><p>Nous vérifions régulièrement l’état du bien, pour qu’il reste soigné même quand vous ne le voyez pas.</p></div>
+</div></div>
+<div class="service-cluster"><div class="service-cluster-heading"><h3>02 · Gestion et locations</h3><p>De la gestion à distance aux hôtes, si vous choisissez de louer.</p></div><div class="services-grid stagger">
+<div class="service-card" style="--i:2"><div class="service-icon"><svg class="icon"><use href="#i-pin"></use></svg></div><h3>Gestion à distance</h3><p>Pas besoin d’être présent : nous sommes sur place en Sicile, vous suivez tout confortablement à distance.</p></div>
+<div class="service-card" style="--i:5"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Gestion des réservations</h3><p>Nous nous occupons du calendrier, des demandes et de la communication avec les hôtes du début à la fin du séjour.</p></div>
+<div class="service-card" style="--i:6"><div class="service-icon"><svg class="icon"><use href="#i-wallet"></use></svg></div><h3>Dépenses et revenus</h3><p>Chaque dépense et chaque recette est suivie et consultable, sans calcul à faire en fin de mois.</p></div>
+</div></div>
+<div class="service-cluster"><div class="service-cluster-heading"><h3>03 · Suivi et communication</h3><p>Suivez ce qui se passe et échangez avec nous.</p></div><div class="services-grid stagger">
+<div class="service-card" style="--i:1"><div class="service-icon"><svg class="icon"><use href="#i-verify"></use></svg></div><h3>Travail vérifiable</h3><p>Chaque intervention et contrôle est documenté : vous pouvez revoir ce qui a été fait, et quand, sur la plateforme.</p></div>
+<div class="service-card" style="--i:7"><div class="service-icon"><svg class="icon"><use href="#i-grid"></use></svg></div><h3>Tableau de bord transparent</h3><p>Accédez à tout moment à votre espace privé pour voir l’état, l’occupation et l’activité de votre bien.</p></div>
+<div class="service-card" style="--i:8"><div class="service-icon"><svg class="icon"><use href="#i-chat"></use></svg></div><h3>Messagerie directe</h3><p>Un canal direct avec notre équipe pour vos questions, demandes ou mises à jour, quand vous le souhaitez.</p></div>
+</div></div>
+</div>
 </section>
 
 <section class="owner-story reveal" id="area-proprietari"><div class="owner-intro"><span class="section-tag">Votre espace propriétaire</span><h2 class="section-title">Votre maison. Vos décisions. Votre suivi.</h2><p class="section-sub">Un seul espace pour suivre la gestion de votre bien, même à distance. L’aperçu ci-dessous illustre les fonctions sans inventer de données personnelles ni de réservations.</p></div><div class="owner-layout"><div class="owner-preview" aria-label="Espace propriétaire · aperçu"><div class="owner-preview-bar"><i></i><i></i><i></i><span>Espace propriétaire · aperçu</span></div><div class="owner-preview-inner"><div class="owner-preview-side"><strong>ViverePM</strong><span>Vue d’ensemble</span><span>Activités et documents</span></div><div class="owner-preview-main"><h3>Vue d’ensemble</h3><p>Activités et documents</p><div class="owner-preview-tiles"><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><span>Réservations</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-wallet"></use></svg><span>Recettes et dépenses</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-tool"></use></svg><span>Interventions</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg><span>Messages</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-document"></use></svg><span>Documents</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><span>Dates personnelles</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-verify"></use></svg><span>Contrôles et entretien</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-grid"></use></svg><span>Suivez les activités enregistrées et les nouvelles de votre bien.</span></div></div></div></div></div><div class="owner-benefits"><div class="owner-benefit"><span class="owner-benefit-num">01</span><h3>Devis à approuver</h3><p>Consultez les propositions avant d’autoriser les travaux convenus.</p></div><div class="owner-benefit"><span class="owner-benefit-num">02</span><h3>Calendrier et réservations</h3><p>Consultez les séjours et bloquez des dates pour votre usage personnel.</p></div><div class="owner-benefit"><span class="owner-benefit-num">03</span><h3>Rapports et documents</h3><p>Consultez recettes, dépenses et fichiers de votre bien.</p></div><div class="owner-benefit"><span class="owner-benefit-num">04</span><h3>Accéder à mon espace</h3><p>Aperçu illustratif des fonctions. Les données réelles sont visibles après connexion.</p></div><a class="owner-link" href="https://app.viverepm.it/">undefined <span aria-hidden="true">→</span></a></div></div><p class="owner-preview-note">undefined</p></section>
