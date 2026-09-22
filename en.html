@@ -652,6 +652,19 @@
 @media(max-width:900px){.owner-story .owner-layout{grid-template-columns:1fr}.owner-benefits{max-width:650px}.owner-story{padding:70px 22px}}
 @media(max-width:490px){.owner-preview-inner{grid-template-columns:100px minmax(0,1fr)}.owner-preview-side{padding:18px 7px}.owner-preview-side strong{font-size:15px}.owner-preview-side span{font-size:9px;padding:8px 4px}.owner-preview-main{padding:18px 11px}.owner-preview-main h3{font-size:19px}.owner-preview-tiles{gap:7px}.owner-preview-tile{padding:12px 8px;min-height:78px}.owner-preview-tile span{font-size:10px}.owner-benefits{grid-template-columns:1fr}.owner-benefits .owner-link{grid-column:1}}
 
+
+/* Group services into three clear owner-focused chapters */
+#servizi .service-clusters{max-width:1160px;margin:44px auto 0;display:grid;gap:36px}
+#servizi .service-cluster{min-width:0}
+#servizi .service-cluster-heading{display:flex;justify-content:space-between;align-items:baseline;gap:18px;border-bottom:1px solid #d9dfd8;padding:0 0 15px;margin:0 0 16px}
+#servizi .service-cluster-heading h3{font-family:'Playfair Display',serif;font-size:clamp(22px,2vw,28px);color:var(--green-deep);margin:0;line-height:1.3}
+#servizi .service-cluster-heading p{font-size:13px;color:var(--ink-soft);line-height:1.5;margin:0;max-width:360px;text-align:right}
+#servizi .service-cluster:nth-child(2) .service-cluster-heading h3{color:var(--gold-deep)}
+#servizi .service-cluster:nth-child(2) .service-icon{background:#f4ebdd;color:var(--gold-deep)}
+#servizi .service-cluster .services-grid{margin:0;max-width:none}
+#servizi .service-cluster .service-card{height:100%;box-shadow:0 8px 26px rgba(23,61,54,.035)}
+#servizi .service-cluster .service-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(23,61,54,.09)}
+@media(max-width:760px){#servizi .service-clusters{gap:30px;margin-top:30px}#servizi .service-cluster-heading{display:block}#servizi .service-cluster-heading p{text-align:left;margin-top:7px}}
 </style>
 </head>
 <body>
@@ -769,18 +782,23 @@
   <div class="section-tag-wrap"><span class="section-tag">What we do</span></div>
   <h2 class="section-title">We manage everything, you stay always informed</h2>
   <p class="section-sub">Documents, deadlines, maintenance, guests: we look after every aspect of your property in Sicily, even while you’re far away, and let you verify it all.</p>
-  <div class="services-grid stagger">
-    <div class="service-card" style="--i:0"><div class="service-icon"><svg class="icon"><use href="#i-document"></use></svg></div><h3>Documents &amp; deadlines</h3><p>We keep insurance, certifications and requirements under control, and warn you before they expire.</p></div>
-    <div class="service-card" style="--i:1"><div class="service-icon"><svg class="icon"><use href="#i-verify"></use></svg></div><h3>Verified work</h3><p>Every job and inspection is documented: you can review what was done, and when, on the platform.</p></div>
-    <div class="service-card" style="--i:2"><div class="service-icon"><svg class="icon"><use href="#i-pin"></use></svg></div><h3>Remote management</h3><p>No need to be there in person: we’re on site in Sicily, you follow everything comfortably from afar.</p></div>
-    <div class="service-card" style="--i:3"><div class="service-icon"><svg class="icon"><use href="#i-tool"></use></svg></div><h3>Maintenance &amp; repairs</h3><p>We send you quotes to approve before every job: you decide, no surprises on the bill.</p></div>
-    <div class="service-card" style="--i:4"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Periodic checks</h3><p>We regularly check the property’s condition, so it stays well kept even when you’re not there.</p></div>
-    <div class="service-card" style="--i:5"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Booking management</h3><p>We take care of calendar, requests and guest communication from start to finish of the stay.</p></div>
-    <div class="service-card" style="--i:6"><div class="service-icon"><svg class="icon"><use href="#i-wallet"></use></svg></div><h3>Expenses &amp; earnings</h3><p>Every expense and every payment is tracked and available, no calculations needed at month’s end.</p></div>
-    <div class="service-card" style="--i:7"><div class="service-icon"><svg class="icon"><use href="#i-grid"></use></svg></div><h3>Transparent dashboard</h3><p>Access your private dashboard any time to see status, occupancy and activity for your property.</p></div>
-    <div class="service-card" style="--i:8"><div class="service-icon"><svg class="icon"><use href="#i-chat"></use></svg></div><h3>Direct messaging</h3><p>A direct channel with our team for questions, requests or updates, whenever you need.</p></div>
-  </div>
-  
+<div class="service-clusters">
+<div class="service-cluster"><div class="service-cluster-heading"><h3>01 · Property care</h3><p>Every detail of your home looked after locally.</p></div><div class="services-grid stagger">
+<div class="service-card" style="--i:0"><div class="service-icon"><svg class="icon"><use href="#i-document"></use></svg></div><h3>Documents &amp; deadlines</h3><p>We keep insurance, certifications and requirements under control, and warn you before they expire.</p></div>
+<div class="service-card" style="--i:3"><div class="service-icon"><svg class="icon"><use href="#i-tool"></use></svg></div><h3>Maintenance &amp; repairs</h3><p>We send you quotes to approve before every job: you decide, no surprises on the bill.</p></div>
+<div class="service-card" style="--i:4"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Periodic checks</h3><p>We regularly check the property’s condition, so it stays well kept even when you’re not there.</p></div>
+</div></div>
+<div class="service-cluster"><div class="service-cluster-heading"><h3>02 · Management and rentals</h3><p>From remote management to guests, when you choose to rent.</p></div><div class="services-grid stagger">
+<div class="service-card" style="--i:2"><div class="service-icon"><svg class="icon"><use href="#i-pin"></use></svg></div><h3>Remote management</h3><p>No need to be there in person: we’re on site in Sicily, you follow everything comfortably from afar.</p></div>
+<div class="service-card" style="--i:5"><div class="service-icon"><svg class="icon"><use href="#i-calendar"></use></svg></div><h3>Booking management</h3><p>We take care of calendar, requests and guest communication from start to finish of the stay.</p></div>
+<div class="service-card" style="--i:6"><div class="service-icon"><svg class="icon"><use href="#i-wallet"></use></svg></div><h3>Expenses &amp; earnings</h3><p>Every expense and every payment is tracked and available, no calculations needed at month’s end.</p></div>
+</div></div>
+<div class="service-cluster"><div class="service-cluster-heading"><h3>03 · Overview and communication</h3><p>See what is happening and stay in touch.</p></div><div class="services-grid stagger">
+<div class="service-card" style="--i:1"><div class="service-icon"><svg class="icon"><use href="#i-verify"></use></svg></div><h3>Verified work</h3><p>Every job and inspection is documented: you can review what was done, and when, on the platform.</p></div>
+<div class="service-card" style="--i:7"><div class="service-icon"><svg class="icon"><use href="#i-grid"></use></svg></div><h3>Transparent dashboard</h3><p>Access your private dashboard any time to see status, occupancy and activity for your property.</p></div>
+<div class="service-card" style="--i:8"><div class="service-icon"><svg class="icon"><use href="#i-chat"></use></svg></div><h3>Direct messaging</h3><p>A direct channel with our team for questions, requests or updates, whenever you need.</p></div>
+</div></div>
+</div>
 </section>
 
 <section class="owner-story reveal" id="area-proprietari"><div class="owner-intro"><span class="section-tag">Your private owner area</span><h2 class="section-title">Your home. Your decisions. Your overview.</h2><p class="section-sub">One place to follow the management of your property from anywhere. The preview below illustrates available features without invented personal data or bookings.</p></div><div class="owner-layout"><div class="owner-preview" aria-label="Owner area · preview"><div class="owner-preview-bar"><i></i><i></i><i></i><span>Owner area · preview</span></div><div class="owner-preview-inner"><div class="owner-preview-side"><strong>ViverePM</strong><span>Property overview</span><span>Activity and documents</span></div><div class="owner-preview-main"><h3>Property overview</h3><p>Activity and documents</p><div class="owner-preview-tiles"><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><span>Bookings</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-wallet"></use></svg><span>Income and expenses</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-tool"></use></svg><span>Maintenance</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg><span>Messages</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-document"></use></svg><span>Documents</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><span>Personal dates</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-verify"></use></svg><span>Inspections and maintenance</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-grid"></use></svg><span>Follow recorded activity and property updates.</span></div></div></div></div></div><div class="owner-benefits"><div class="owner-benefit"><span class="owner-benefit-num">01</span><h3>Quotes awaiting approval</h3><p>Review proposals before authorising agreed work.</p></div><div class="owner-benefit"><span class="owner-benefit-num">02</span><h3>Calendar and bookings</h3><p>Review stays and block dates for personal use.</p></div><div class="owner-benefit"><span class="owner-benefit-num">03</span><h3>Reports and documents</h3><p>Review your property's income, expenses and files.</p></div><div class="owner-benefit"><span class="owner-benefit-num">04</span><h3>Open your private area</h3><p>Illustrative feature preview. Actual data is visible only after sign-in.</p></div><a class="owner-link" href="https://app.viverepm.it/">undefined <span aria-hidden="true">→</span></a></div></div><p class="owner-preview-note">undefined</p></section>
