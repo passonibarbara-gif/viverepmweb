@@ -585,6 +585,40 @@
  .hero .hero-grid h1>.gold-line{white-space:normal!important}
 }
 
+
+/* Phase 2: two clear property-owner paths, no tiny-text image collage */
+.editorial-services .pain-grid{max-width:1160px;gap:25px;align-items:stretch}
+.editorial-services .pain-card,.editorial-services .solution-card{display:flex;flex-direction:column;box-shadow:0 14px 38px rgba(23,61,54,.065);transition:transform .25s ease,box-shadow .25s ease}
+.editorial-services .pain-card:hover,.editorial-services .solution-card:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(23,61,54,.12)}
+.editorial-services .editorial-card-image{height:280px;object-fit:cover}
+.editorial-services .solution-card .editorial-card-image{object-position:center 62%}
+.editorial-services .service-card-body{padding:30px 32px 32px;display:flex;flex:1;flex-direction:column}
+.editorial-services .service-number{color:var(--gold-deep);text-transform:uppercase;font-size:10px;letter-spacing:.2em;font-weight:700}
+.editorial-services .pain-card h3,.editorial-services .solution-card h3{padding:0;margin:12px 0 11px;font-size:clamp(24px,2.3vw,33px);line-height:1.2;display:block}
+.editorial-services .service-card-intro{font-size:15px;color:var(--ink-soft);line-height:1.65;margin:0 0 17px}
+.editorial-services .pain-card ul,.editorial-services .solution-card ul{padding:0 0 0 19px;margin:0 0 25px;font-size:14px;line-height:1.6;flex:1}
+.editorial-services .service-path-cta{display:inline-flex;align-self:flex-start;align-items:center;gap:12px;text-decoration:none;background:var(--green-deep);color:white;border-radius:100px;padding:13px 20px;font-size:13px;font-weight:600;transition:background .2s,transform .2s}
+.editorial-services .solution-card .service-path-cta{background:var(--gold-deep)}
+.editorial-services .service-path-cta:hover{transform:translateY(-2px);background:var(--green)}
+#servizi .services-grid{max-width:1160px;gap:16px}
+#servizi .service-card{padding:29px 22px;text-align:left;border:1px solid var(--line);border-radius:14px;background:var(--paper);transition:transform .25s,box-shadow .25s}
+#servizi .service-card:hover{box-shadow:var(--shadow)}
+#servizi .service-icon{margin:0 0 18px;width:49px;height:49px}
+#servizi .service-card h3{font-size:19px;color:var(--green-deep)}
+#servizi .service-card p{font-size:13.5px;line-height:1.65}
+#recensioni .promise-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1100px;margin:0 auto}
+#recensioni .promise-item{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:30px}
+#recensioni .promise-icon{width:43px;height:43px;background:var(--cream-2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--green-deep);margin-bottom:17px}
+#recensioni .promise-item h3{font-family:'Playfair Display',serif;font-size:21px;color:var(--green-deep);margin:0 0 10px}
+#recensioni .promise-item p{color:var(--ink-soft);font-size:14px;line-height:1.6;margin:0}
+@media(max-width:760px){
+ .editorial-services .editorial-card-image{height:220px}
+ .editorial-services .service-card-body{padding:25px 22px}
+ #servizi .services-grid{grid-template-columns:1fr}
+ #recensioni .promise-grid{grid-template-columns:1fr}
+}
+@media(min-width:761px) and (max-width:950px){#recensioni .promise-grid{gap:10px}#recensioni .promise-item{padding:22px}}
+
 </style>
 </head>
 <body>
@@ -676,22 +710,24 @@
   <p class="section-sub">Agħżel is-servizz li jaqbel għalik. Aħna nieħdu ħsieb il-bqija.</p>
   <div class="pain-grid">
     <div class="pain-card"><img class="editorial-card-image" src="hero-terrazza.jpg" alt="" loading="lazy">
-      <h3 style="color:var(--green);"><svg class="icon" style="width:20px;height:20px;color:var(--green)"><use href="#i-house-check"></use></svg> Kustodja u ġestjoni</h3>
+      <div class="service-card-body"><span class="service-number">01 · Kura</span><h3>Darek, dejjem taħt kura</h3><p class="service-card-intro">Ġestjoni ta’ kuljum tal-proprjetà, anki meta tkun ’il bogħod.</p>
       <ul>
         <li>Dokumenti, assigurazzjonijiet u skadenzi dejjem sorveljati</li>
         <li>Kontrolli perjodiċi u manutenzjoni ppjanata</li>
         <li>Interventi b'estimi li trid tapprova int</li>
         <li>Kollox jista' jiġi vverifikat f'kull mument mill-pjattaforma</li>
       </ul>
+      <a class="service-path-cta" href="#contatti">Skopri l-ġestjoni <span aria-hidden="true">→</span></a></div>
     </div>
-    <div class="solution-card"><img class="editorial-card-image" src="collage-servizi.jpg" alt="" loading="lazy">
-      <h3><svg class="icon" style="width:20px;height:20px;color:var(--gold)"><use href="#i-key"></use></svg> Trid ukoll tikrih?</h3>
+    <div class="solution-card"><img class="editorial-card-image" src="tramonto-cefalu.jpg" alt="" loading="lazy">
+      <div class="service-card-body"><span class="service-number">02 · Kiri għall-vaganzi</span><h3>Darek tista’ taħdem għalik</h3><p class="service-card-intro">Jekk tagħżel li tikriha, nieħdu ħsieb ukoll il-mistednin u ż-żjarat.</p>
       <ul>
         <li>Minbarra dan, aħna nieħdu ħsieb prenotazzjonijiet, kalendarju u mistednin għalik</li>
         <li>Assistenza lill-mistednin 24/7, mill-wasla sat-tluq</li>
         <li>Dħul u rendikonti dejjem irrekordjati u disponibbli</li>
         <li>Int tiddeċiedi jekk u meta tattiva l-kiri: l-ebda obbligu</li>
       </ul>
+      <a class="service-path-cta" href="#contatti">Skopri l-kiri <span aria-hidden="true">→</span></a></div>
     </div>
   </div>
 </section>
@@ -711,12 +747,12 @@
     <div class="service-card" style="--i:7"><div class="service-icon"><svg class="icon"><use href="#i-grid"></use></svg></div><h3>Dashboard trasparenti</h3><p>Idħol f'kull mument fl-erja riservata tiegħek biex tara l-istat, l-okkupazzjoni u l-attività tal-proprjetà tiegħek.</p></div>
     <div class="service-card" style="--i:8"><div class="service-icon"><svg class="icon"><use href="#i-chat"></use></svg></div><h3>Messaġġi diretti</h3><p>Kanal dirett mat-tim tagħna għal mistoqsijiet, talbiet jew aġġornamenti, meta trid int.</p></div>
   </div>
-  <div class="showcase-frame"><img src="collage-servizi.jpg" alt="Ħarsa ġenerali lejn is-servizzi ta' ġestjoni: spezzjonijiet, manutenzjoni, tindif, prenotazzjonijiet, rapporti u valorizzazzjoni tal-proprjetà"></div>
+  
 </section>
 
 <section id="come-funziona" class="alt-bg reveal">
   <div class="section-tag-wrap"><span class="section-tag">Kif taħdem</span></div>
-  <h2 class="section-title">Mill-ewwel kuntatt sal-ewwel prenotazzjoni tiegħek</h2>
+  <h2 class="section-title">Mill-ewwel kuntatt sal-ġestjoni tal-proprjetà</h2>
   <p class="section-sub">Proċess sempliċi, maħsub biex ifaddallek il-ħin mill-ewwel jum.</p>
   <div class="steps stagger">
     <div class="step-card" style="--i:0"><span class="step-num">01</span><h3>Tikkuntattjana</h3><p>Timla l-formola jew tiktbilna fuq WhatsApp, anke minn barra Sqallija, b'xi informazzjoni dwar il-proprjetà tiegħek.</p></div>
@@ -746,26 +782,11 @@
 </section>
 
 <section id="recensioni" class="reveal">
-  <div class="section-tag-wrap"><span class="section-tag">Min diġà fada fina</span></div>
-  <h2 class="section-title">X'jgħidu s-sidien tagħna</h2>
-  <div class="testi-grid">
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <p class="quote">"Ngħix barra minn Sqallija u ma kontx nirnexxi nsegwi l-iskadenzi u l-manutenzjoni tal-appartament tiegħi. Issa nirċievi biss ir-rapporti biex nikkontrolla."</p>
-      <div class="testi-foot"><div class="testi-avatar" style="background:var(--green)">M.R.</div><div class="testi-author">Eżempju ta' xhieda</div></div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <p class="quote">"Fl-aħħar dejjem naf x'qed jiġri bil-proprjetà tiegħi, anke ngħix 'il bogħod: kull intervent huwa dokumentat fuq il-pjattaforma."</p>
-      <div class="testi-foot"><div class="testi-avatar" style="background:var(--terracotta)">A.C.</div><div class="testi-author">Eżempju ta' xhieda</div></div>
-    </div>
-    <div class="testi-card">
-      <div class="testi-stars">★★★★★</div>
-      <p class="quote">"Ma kellix aktar għalfejn ninkwieta dwar dokumenti u skadenzi: iwissuni qabel issir problema."</p>
-      <div class="testi-foot"><div class="testi-avatar" style="background:var(--sage)">G.T.</div><div class="testi-author">Eżempju ta' xhieda</div></div>
-    </div>
-  </div>
-  <p class="testi-note">* Testi provviżorji: ibdilhom b'reċensjonijiet reali tas-sidien tiegħek qabel tippubblika.</p>
+  <div class="section-tag-wrap"><span class="section-tag">L-impenn tagħna</span></div>
+  <h2 class="section-title">Il-proprjetà tiegħek. Id-deċiżjonijiet tiegħek. Kollox taħt kontroll.</h2>
+  <div class="promise-grid"><div class="promise-item"><span class="promise-icon"><svg class="icon"><use href="#i-verify"></use></svg></span><h3>Xogħol għall-approvazzjoni</h3><p>Ara l-istimi qabel jibda x-xogħol miftiehem.</p></div>
+<div class="promise-item"><span class="promise-icon"><svg class="icon"><use href="#i-document"></use></svg></span><h3>Attivitajiet dokumentati</h3><p>Segwi spezzjonijiet, manutenzjoni u aġġornamenti.</p></div>
+<div class="promise-item"><span class="promise-icon"><svg class="icon"><use href="#i-chat"></use></svg></span><h3>Kuntatt dedikat</h3><p>Tkellem direttament ma’ min jieħu ħsieb il-proprjetà.</p></div></div>
 </section>
 
 <section id="faq" class="alt-bg reveal">
