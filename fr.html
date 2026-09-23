@@ -696,6 +696,24 @@
 @media(max-width:760px){#come-funziona.process-section{padding-top:70px;padding-bottom:75px}.process-timeline{margin-top:36px;gap:17px}.process-timeline::before{left:17px;top:25px;bottom:25px}.process-step{grid-template-columns:36px minmax(0,1fr);gap:13px}.process-dot{width:12px;height:12px;margin:26px 0 0 12px;box-shadow:0 0 0 6px rgba(153,107,53,.10)}.process-card{padding:22px 20px;border-radius:15px}.process-card h3{font-size:24px}.process-card p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.process-card{transition:none}.process-card:hover{transform:none}}
 
+
+/* Why ViverePM: refined two-column owner assurance section */
+.trust-band.trust-refined{position:relative;overflow:hidden;background:linear-gradient(120deg,#173d36 0%,#1c433b 60%,#204940 100%);padding-top:90px;padding-bottom:100px}
+.trust-band.trust-refined::before{content:"";pointer-events:none;position:absolute;right:-145px;top:-245px;width:525px;height:525px;border:1px solid rgba(214,180,118,.17);border-radius:50%;box-shadow:0 0 0 65px rgba(214,180,118,.027),0 0 0 140px rgba(214,180,118,.025)}
+.trust-band.trust-refined .trust-intro{position:relative;max-width:860px;margin:0 auto 44px;text-align:center}
+.trust-band.trust-refined .trust-sub{color:#d9e4db;font-size:16px;line-height:1.7;max-width:710px;margin:14px auto 0}
+.trust-band.trust-refined .trust-grid{position:relative;max-width:1120px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px;margin:0 auto}
+.trust-band.trust-refined .trust-item{text-align:left;display:flex;gap:21px;align-items:flex-start;padding:32px 34px;border:1px solid rgba(230,221,197,.23);border-radius:19px;background:rgba(255,255,255,.052);transition:background .25s ease,border-color .25s ease,transform .25s ease}
+.trust-band.trust-refined .trust-item:hover{background:rgba(255,255,255,.085);border-color:rgba(211,174,112,.6);transform:translateY(-3px)}
+.trust-band.trust-refined .trust-item .icon-badge{width:52px;height:52px;min-width:52px;margin:0;border-color:rgba(208,165,94,.75);background:rgba(208,165,94,.085);color:#ddbb7e}
+.trust-band.trust-refined .trust-item:hover .icon-badge{transform:none}
+.trust-band.trust-refined .trust-copy{min-width:0}
+.trust-band.trust-refined .trust-index{color:#d3ae72;display:block;letter-spacing:.23em;font-size:11px;font-weight:700;margin:0 0 9px}
+.trust-band.trust-refined .trust-item h3{font-size:clamp(20px,2vw,26px);line-height:1.24;color:#fff;margin:0 0 11px}
+.trust-band.trust-refined .trust-item p{font-size:14px;line-height:1.7;font-weight:400;color:#d3dfd4}
+@media(max-width:760px){.trust-band.trust-refined{padding-top:70px;padding-bottom:76px}.trust-band.trust-refined .trust-intro{margin-bottom:30px}.trust-band.trust-refined .trust-grid{grid-template-columns:1fr;gap:13px}.trust-band.trust-refined .trust-item{padding:25px 22px;gap:16px}.trust-band.trust-refined .trust-item .icon-badge{width:43px;height:43px;min-width:43px}.trust-band.trust-refined .trust-sub{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.trust-band.trust-refined .trust-item{transition:none}.trust-band.trust-refined .trust-item:hover{transform:none}}
+
 </style>
 </head>
 <body>
@@ -853,14 +871,14 @@
   </div>
 </section>
 
-<section class="trust-band reveal">
-  <div class="section-tag-wrap"><span class="section-tag" style="color:var(--gold);">Pourquoi nous choisir</span></div>
-  <h2 class="section-title" style="color:#fff;">La tranquillité d’un partenaire sérieux</h2>
+<section class="trust-band trust-refined reveal" id="perche-sceglierci">
+  <div class="trust-intro"><div class="section-tag-wrap"><span class="section-tag" style="color:#d3ae72;">Pourquoi ViverePM</span></div>
+    <h2 class="section-title" style="color:#fff;">Une présence sur place. Votre tranquillité.</h2><p class="trust-sub">Un suivi concret en Sicile et une vue transparente depuis votre espace privé.</p></div>
   <div class="trust-grid">
-    <div class="trust-item"><div class="icon-badge"><svg class="icon"><use href="#i-compass"></use></svg></div><h3>Présents sur le terrain</h3><p>Nous sommes physiquement en Sicile : nous intervenons en personne, pas seulement à distance.</p></div>
-    <div class="trust-item"><div class="icon-badge"><svg class="icon"><use href="#i-shield"></use></svg></div><h3>Documents et échéances sous contrôle</h3><p>Aucune échéance oubliée : nous surveillons tout et vous prévenons à temps.</p></div>
-    <div class="trust-item"><div class="icon-badge"><svg class="icon"><use href="#i-verify"></use></svg></div><h3>Travail toujours vérifiable</h3><p>Chaque activité est suivie : vous pouvez contrôler ce qui a été fait à tout moment.</p></div>
-    <div class="trust-item"><div class="icon-badge"><svg class="icon"><use href="#i-headset"></use></svg></div><h3>Toujours joignables</h3><p>Un interlocuteur dédié pour vous, même si vous vivez hors de Sicile.</p></div>
+    <div class="trust-item"><div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-compass"></use></svg></div><div class="trust-copy"><span class="trust-index">01</span><h3>Sur place, en Sicile</h3><p>Nous suivons votre bien en personne et coordonnons les activités en votre absence.</p></div></div>
+    <div class="trust-item"><div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></div><div class="trust-copy"><span class="trust-index">02</span><h3>Échéances organisées</h3><p>Nous suivons les documents et les échéances et vous informons des activités prévues.</p></div></div>
+    <div class="trust-item"><div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-verify"></use></svg></div><div class="trust-copy"><span class="trust-index">03</span><h3>Tout voir, même à distance</h3><p>Consultez interventions, réservations et mises à jour depuis votre espace privé.</p></div></div>
+    <div class="trust-item"><div class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#i-headset"></use></svg></div><div class="trust-copy"><span class="trust-index">04</span><h3>Un interlocuteur pour votre maison</h3><p>Vous savez à qui vous adresser pour les demandes, les échanges et les décisions concernant votre bien.</p></div></div>
   </div>
 </section>
 
