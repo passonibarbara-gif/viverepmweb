@@ -714,6 +714,24 @@
 @media(max-width:760px){.trust-band.trust-refined{padding-top:70px;padding-bottom:76px}.trust-band.trust-refined .trust-intro{margin-bottom:30px}.trust-band.trust-refined .trust-grid{grid-template-columns:1fr;gap:13px}.trust-band.trust-refined .trust-item{padding:25px 22px;gap:16px}.trust-band.trust-refined .trust-item .icon-badge{width:43px;height:43px;min-width:43px}.trust-band.trust-refined .trust-sub{font-size:14px}}
 @media(prefers-reduced-motion:reduce){.trust-band.trust-refined .trust-item{transition:none}.trust-band.trust-refined .trust-item:hover{transform:none}}
 
+
+/* Our commitment – calm editorial layout, distinct from the timeline and green benefits */
+#recensioni.commitment-section{background:var(--paper);padding-top:105px;padding-bottom:105px}
+#recensioni.commitment-section .commitment-layout{max-width:1170px;margin:0 auto;display:grid;grid-template-columns:minmax(250px,.78fr) minmax(0,1.22fr);gap:clamp(46px,7vw,115px);align-items:start}
+#recensioni.commitment-section .commitment-intro{padding-top:12px}
+#recensioni.commitment-section .section-tag-wrap{text-align:left;margin-bottom:19px}
+#recensioni.commitment-section .section-title{text-align:left;line-height:1.13;margin:0 0 23px;font-size:clamp(37px,3.65vw,59px)}
+#recensioni.commitment-section .commitment-sub{color:var(--ink-soft);font-size:16px;line-height:1.8;margin:0;max-width:390px}
+#recensioni.commitment-section .commitment-signature{display:block;color:var(--gold-deep);font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:21px;line-height:1.5;margin-top:33px}
+#recensioni.commitment-section .promise-grid{max-width:none;margin:0;display:grid;grid-template-columns:1fr;gap:0;border-top:1px solid var(--line)}
+#recensioni.commitment-section .promise-item{border:0;border-bottom:1px solid var(--line);border-radius:0;box-shadow:none;background:transparent;display:grid;grid-template-columns:56px minmax(0,1fr);gap:21px;align-items:start;padding:31px 0}
+#recensioni.commitment-section .promise-icon{width:50px;height:50px;border:1px solid rgba(153,107,53,.35);background:rgba(153,107,53,.055);border-radius:50%;color:var(--gold-deep);margin:1px 0 0}
+#recensioni.commitment-section .promise-icon .icon{width:23px;height:23px}
+#recensioni.commitment-section .promise-item h3{font-size:clamp(22px,2vw,27px);line-height:1.24;margin:0 0 10px}
+#recensioni.commitment-section .promise-item p{max-width:490px;font-size:15px;line-height:1.75;margin:0}
+@media(max-width:850px){#recensioni.commitment-section{padding-top:77px;padding-bottom:80px}#recensioni.commitment-section .commitment-layout{grid-template-columns:1fr;gap:38px}#recensioni.commitment-section .commitment-intro{padding-top:0}#recensioni.commitment-section .section-title{font-size:clamp(35px,7vw,48px)}#recensioni.commitment-section .commitment-signature{margin-top:19px}#recensioni.commitment-section .promise-item{padding:25px 0}}
+@media(max-width:430px){#recensioni.commitment-section .promise-item{grid-template-columns:43px minmax(0,1fr);gap:15px}#recensioni.commitment-section .promise-icon{width:41px;height:41px}#recensioni.commitment-section .promise-icon .icon{width:20px;height:20px}#recensioni.commitment-section .promise-item h3{font-size:21px}#recensioni.commitment-section .promise-item p{font-size:14px}}
+
 </style>
 </head>
 <body>
@@ -882,12 +900,15 @@
   </div>
 </section>
 
-<section id="recensioni" class="reveal">
-  <div class="section-tag-wrap"><span class="section-tag">L-impenn tagħna</span></div>
-  <h2 class="section-title">Il-proprjetà tiegħek. Id-deċiżjonijiet tiegħek. Kollox taħt kontroll.</h2>
-  <div class="promise-grid"><div class="promise-item"><span class="promise-icon"><svg class="icon"><use href="#i-verify"></use></svg></span><h3>Xogħol għall-approvazzjoni</h3><p>Ara l-istimi qabel jibda x-xogħol miftiehem.</p></div>
-<div class="promise-item"><span class="promise-icon"><svg class="icon"><use href="#i-document"></use></svg></span><h3>Attivitajiet dokumentati</h3><p>Segwi spezzjonijiet, manutenzjoni u aġġornamenti.</p></div>
-<div class="promise-item"><span class="promise-icon"><svg class="icon"><use href="#i-chat"></use></svg></span><h3>Kuntatt dedikat</h3><p>Tkellem direttament ma’ min jieħu ħsieb il-proprjetà.</p></div></div>
+<section id="recensioni" class="reveal commitment-section">
+  <div class="commitment-layout">
+    <div class="commitment-intro"><div class="section-tag-wrap"><span class="section-tag">L-impenn tagħna</span></div><h2 class="section-title">Darek tibqa’ dejjem f’idejk.</h2><p class="commitment-sub">Aħna nieħdu ħsieb il-ġestjoni ta’ kuljum. Id-deċiżjonijiet importanti jibqgħu tiegħek.</p><span class="commitment-signature">Aħna nieħdu ħsiebha. Int tiddeċiedi.</span></div>
+    <div class="promise-grid">
+      <div class="promise-item"><span class="promise-icon"><svg class="icon" aria-hidden="true"><use href="#i-verify"></use></svg></span><div class="promise-copy"><h3>Xogħol bl-approvazzjoni tiegħek</h3><p>Irċievi u evalwa l-istimi qabel jitwettaq ix-xogħol miftiehem.</p></div></div>
+      <div class="promise-item"><span class="promise-icon"><svg class="icon" aria-hidden="true"><use href="#i-document"></use></svg></span><div class="promise-copy"><h3>Kull attività dokumentata</h3><p>Ara l-kontrolli, il-manutenzjoni u l-aġġornamenti mill-erja riservata tiegħek.</p></div></div>
+      <div class="promise-item"><span class="promise-icon"><svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg></span><div class="promise-copy"><h3>Tkellem ma’ min jieħu ħsieb il-proprjetà</h3><p>Kuntatt dirett għal talbiet, komunikazzjonijiet u deċiżjonijiet dwar darek.</p></div></div>
+    </div>
+  </div>
 </section>
 
 <section id="faq" class="alt-bg reveal">
