@@ -732,6 +732,29 @@
 @media(max-width:850px){#recensioni.commitment-section{padding-top:77px;padding-bottom:80px}#recensioni.commitment-section .commitment-layout{grid-template-columns:1fr;gap:38px}#recensioni.commitment-section .commitment-intro{padding-top:0}#recensioni.commitment-section .section-title{font-size:clamp(35px,7vw,48px)}#recensioni.commitment-section .commitment-signature{margin-top:19px}#recensioni.commitment-section .promise-item{padding:25px 0}}
 @media(max-width:430px){#recensioni.commitment-section .promise-item{grid-template-columns:43px minmax(0,1fr);gap:15px}#recensioni.commitment-section .promise-icon{width:41px;height:41px}#recensioni.commitment-section .promise-icon .icon{width:20px;height:20px}#recensioni.commitment-section .promise-item h3{font-size:21px}#recensioni.commitment-section .promise-item p{font-size:14px}}
 
+
+/* FAQ – airy editorial accordion; keep native details/summary functionality */
+#faq.faq-refined{background:var(--cream-2);padding-top:103px;padding-bottom:110px}
+#faq.faq-refined .faq-layout{max-width:1190px;margin:0 auto;display:grid;grid-template-columns:minmax(235px,.77fr) minmax(0,1.23fr);align-items:start;gap:clamp(45px,6vw,108px)}
+#faq.faq-refined .faq-intro{padding-top:10px}
+#faq.faq-refined .section-tag-wrap{text-align:left;margin-bottom:19px}
+#faq.faq-refined .section-title{text-align:left;font-size:clamp(36px,3.7vw,58px);line-height:1.13;margin:0 0 23px}
+#faq.faq-refined .faq-subtitle{max-width:360px;color:var(--ink-soft);font-size:16px;line-height:1.75;margin:0}
+#faq.faq-refined .faq-list{max-width:none;margin:0;border-top:1px solid var(--line)}
+#faq.faq-refined .faq-item{padding:0;border-bottom:1px solid var(--line)}
+#faq.faq-refined .faq-item summary{display:grid;grid-template-columns:34px minmax(0,1fr) 35px;gap:17px;align-items:start;padding:25px 0;line-height:1.4;color:var(--green-deep);font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,1.7vw,23px);font-weight:700;list-style:none;outline-offset:6px}
+#faq.faq-refined .faq-item summary::-webkit-details-marker{display:none}
+#faq.faq-refined .faq-item summary::before{content:attr(data-number);color:var(--gold-deep);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.1em;font-weight:600;padding-top:7px}
+#faq.faq-refined .faq-item summary::after{content:'+';width:29px;height:29px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(153,107,53,.4);border-radius:50%;color:var(--gold-deep);font-family:'Jost',sans-serif;font-size:20px;font-weight:400;transition:background .2s ease,transform .2s ease;margin-top:0}
+#faq.faq-refined .faq-item[open] summary::after{transform:rotate(45deg);background:rgba(153,107,53,.08)}
+#faq.faq-refined .faq-item[open] summary{color:var(--green-deep)}
+#faq.faq-refined .faq-item .faq-body{display:block;max-height:none;overflow:visible;opacity:1;transition:none;padding:0 45px 26px 51px}
+#faq.faq-refined .faq-item .faq-body p{margin:0;font-size:15px;font-weight:400;line-height:1.8;color:var(--ink-soft)}
+#faq.faq-refined .faq-item summary:focus-visible{outline:2px solid var(--gold-deep);border-radius:3px}
+@media(max-width:850px){#faq.faq-refined{padding-top:75px;padding-bottom:80px}#faq.faq-refined .faq-layout{grid-template-columns:1fr;gap:38px}#faq.faq-refined .faq-intro{padding-top:0}#faq.faq-refined .section-title{font-size:clamp(35px,7vw,48px)}#faq.faq-refined .faq-subtitle{max-width:600px}}
+@media(max-width:470px){#faq.faq-refined .faq-item summary{grid-template-columns:25px minmax(0,1fr) 30px;gap:11px;padding:23px 0;font-size:19px}#faq.faq-refined .faq-item .faq-body{padding:0 0 25px 36px}#faq.faq-refined .faq-item .faq-body p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){#faq.faq-refined .faq-item summary::after{transition:none}}
+
 </style>
 </head>
 <body>
@@ -911,17 +934,20 @@
   </div>
 </section>
 
-<section id="faq" class="alt-bg reveal">
-  <div class="section-tag-wrap"><span class="section-tag">FAQ</span></div>
-  <h2 class="section-title">Everything you want to know</h2>
-  <div class="faq-list">
-    <details class="faq-item"><summary>How much does the management service cost?</summary><div class="faq-body"><p>The cost depends on the type of property and the level of service required. After a free assessment we’ll propose a clear rate, with no hidden costs.</p></div></details>
-    <details class="faq-item"><summary>Do I need to handle cleaning or maintenance myself?</summary><div class="faq-body"><p>No, we coordinate cleaning and maintenance ourselves. For major work you’ll always receive a quote to approve before it’s carried out.</p></div></details>
-    <details class="faq-item"><summary>Can I check how my property is doing at any time?</summary><div class="faq-body"><p>Yes, you have access to a private dashboard with occupancy, bookings, expenses, earnings and every job carried out, always up to date.</p></div></details>
-    <details class="faq-item"><summary>I live outside Sicily, can I still entrust you with my property?</summary><div class="faq-body"><p>Yes, that’s actually the most common case: we’re on site and manage everything, you follow progress and verify the work remotely.</p></div></details>
-    <details class="faq-item"><summary>How do you handle documents and deadlines?</summary><div class="faq-body"><p>We monitor insurance, certifications and requirements for the property and warn you well in advance of every deadline, so you never risk forgetting one.</p></div></details>
-    <details class="faq-item"><summary>Am I obliged to rent out the property?</summary><div class="faq-body"><p>No. You can entrust us with just the custody and management (documents, deadlines, maintenance) or, if you wish, ask us to handle rental and guests too.</p></div></details>
-    <details class="faq-item"><summary>Is there a minimum contract duration?</summary><div class="faq-body"><p>Contract terms are agreed together during activation of the service, based on your needs.</p></div></details>
+<section id="faq" class="alt-bg reveal faq-refined">
+  <div class="faq-layout">
+    <div class="faq-intro"><div class="section-tag-wrap"><span class="section-tag">FAQ</span></div><h2 class="section-title">Clear answers, no complications.</h2><p class="faq-subtitle">We have gathered the questions we hear most often. Open any question to learn how we work.</p></div>
+    <div class="faq-list" aria-label="FAQ">
+
+    <details class="faq-item"><summary data-number="01">How much does the management service cost?</summary><div class="faq-body"><p>The cost depends on the type of property and the level of service required. After a free assessment we’ll propose a clear rate, with no hidden costs.</p></div></details>
+    <details class="faq-item"><summary data-number="02">Do I need to handle cleaning or maintenance myself?</summary><div class="faq-body"><p>No, we coordinate cleaning and maintenance ourselves. For major work you’ll always receive a quote to approve before it’s carried out.</p></div></details>
+    <details class="faq-item"><summary data-number="03">Can I check how my property is doing at any time?</summary><div class="faq-body"><p>Yes, you have access to a private dashboard with occupancy, bookings, expenses, earnings and every job carried out, always up to date.</p></div></details>
+    <details class="faq-item"><summary data-number="04">I live outside Sicily, can I still entrust you with my property?</summary><div class="faq-body"><p>Yes, that’s actually the most common case: we’re on site and manage everything, you follow progress and verify the work remotely.</p></div></details>
+    <details class="faq-item"><summary data-number="05">How do you handle documents and deadlines?</summary><div class="faq-body"><p>We monitor insurance, certifications and requirements for the property and warn you well in advance of every deadline, so you never risk forgetting one.</p></div></details>
+    <details class="faq-item"><summary data-number="06">Am I obliged to rent out the property?</summary><div class="faq-body"><p>No. You can entrust us with just the custody and management (documents, deadlines, maintenance) or, if you wish, ask us to handle rental and guests too.</p></div></details>
+    <details class="faq-item"><summary data-number="07">Is there a minimum contract duration?</summary><div class="faq-body"><p>Contract terms are agreed together during activation of the service, based on your needs.</p></div></details>
+  
+    </div>
   </div>
 </section>
 
