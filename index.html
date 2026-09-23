@@ -732,6 +732,29 @@
 @media(max-width:850px){#recensioni.commitment-section{padding-top:77px;padding-bottom:80px}#recensioni.commitment-section .commitment-layout{grid-template-columns:1fr;gap:38px}#recensioni.commitment-section .commitment-intro{padding-top:0}#recensioni.commitment-section .section-title{font-size:clamp(35px,7vw,48px)}#recensioni.commitment-section .commitment-signature{margin-top:19px}#recensioni.commitment-section .promise-item{padding:25px 0}}
 @media(max-width:430px){#recensioni.commitment-section .promise-item{grid-template-columns:43px minmax(0,1fr);gap:15px}#recensioni.commitment-section .promise-icon{width:41px;height:41px}#recensioni.commitment-section .promise-icon .icon{width:20px;height:20px}#recensioni.commitment-section .promise-item h3{font-size:21px}#recensioni.commitment-section .promise-item p{font-size:14px}}
 
+
+/* FAQ – airy editorial accordion; keep native details/summary functionality */
+#faq.faq-refined{background:var(--cream-2);padding-top:103px;padding-bottom:110px}
+#faq.faq-refined .faq-layout{max-width:1190px;margin:0 auto;display:grid;grid-template-columns:minmax(235px,.77fr) minmax(0,1.23fr);align-items:start;gap:clamp(45px,6vw,108px)}
+#faq.faq-refined .faq-intro{padding-top:10px}
+#faq.faq-refined .section-tag-wrap{text-align:left;margin-bottom:19px}
+#faq.faq-refined .section-title{text-align:left;font-size:clamp(36px,3.7vw,58px);line-height:1.13;margin:0 0 23px}
+#faq.faq-refined .faq-subtitle{max-width:360px;color:var(--ink-soft);font-size:16px;line-height:1.75;margin:0}
+#faq.faq-refined .faq-list{max-width:none;margin:0;border-top:1px solid var(--line)}
+#faq.faq-refined .faq-item{padding:0;border-bottom:1px solid var(--line)}
+#faq.faq-refined .faq-item summary{display:grid;grid-template-columns:34px minmax(0,1fr) 35px;gap:17px;align-items:start;padding:25px 0;line-height:1.4;color:var(--green-deep);font-family:'Playfair Display',Georgia,serif;font-size:clamp(18px,1.7vw,23px);font-weight:700;list-style:none;outline-offset:6px}
+#faq.faq-refined .faq-item summary::-webkit-details-marker{display:none}
+#faq.faq-refined .faq-item summary::before{content:attr(data-number);color:var(--gold-deep);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.1em;font-weight:600;padding-top:7px}
+#faq.faq-refined .faq-item summary::after{content:'+';width:29px;height:29px;display:flex;align-items:center;justify-content:center;border:1px solid rgba(153,107,53,.4);border-radius:50%;color:var(--gold-deep);font-family:'Jost',sans-serif;font-size:20px;font-weight:400;transition:background .2s ease,transform .2s ease;margin-top:0}
+#faq.faq-refined .faq-item[open] summary::after{transform:rotate(45deg);background:rgba(153,107,53,.08)}
+#faq.faq-refined .faq-item[open] summary{color:var(--green-deep)}
+#faq.faq-refined .faq-item .faq-body{display:block;max-height:none;overflow:visible;opacity:1;transition:none;padding:0 45px 26px 51px}
+#faq.faq-refined .faq-item .faq-body p{margin:0;font-size:15px;font-weight:400;line-height:1.8;color:var(--ink-soft)}
+#faq.faq-refined .faq-item summary:focus-visible{outline:2px solid var(--gold-deep);border-radius:3px}
+@media(max-width:850px){#faq.faq-refined{padding-top:75px;padding-bottom:80px}#faq.faq-refined .faq-layout{grid-template-columns:1fr;gap:38px}#faq.faq-refined .faq-intro{padding-top:0}#faq.faq-refined .section-title{font-size:clamp(35px,7vw,48px)}#faq.faq-refined .faq-subtitle{max-width:600px}}
+@media(max-width:470px){#faq.faq-refined .faq-item summary{grid-template-columns:25px minmax(0,1fr) 30px;gap:11px;padding:23px 0;font-size:19px}#faq.faq-refined .faq-item .faq-body{padding:0 0 25px 36px}#faq.faq-refined .faq-item .faq-body p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){#faq.faq-refined .faq-item summary::after{transition:none}}
+
 </style>
 </head>
 <body>
@@ -911,17 +934,20 @@
   </div>
 </section>
 
-<section id="faq" class="alt-bg reveal">
-  <div class="section-tag-wrap"><span class="section-tag">Domande frequenti</span></div>
-  <h2 class="section-title">Tutto quello che vuoi sapere</h2>
-  <div class="faq-list">
-    <details class="faq-item"><summary>Quanto costa il servizio di gestione?</summary><div class="faq-body"><p>Il costo dipende dalla tipologia di immobile e dal livello di servizio richiesto. Dopo una valutazione gratuita ti proponiamo una tariffa chiara, senza costi nascosti.</p></div></details>
-    <details class="faq-item"><summary>Devo occuparmi io delle pulizie o della manutenzione?</summary><div class="faq-body"><p>No, coordiniamo noi pulizie e manutenzioni. Per gli interventi più importanti ricevi sempre un preventivo da approvare prima che venga eseguito.</p></div></details>
-    <details class="faq-item"><summary>Posso vedere in ogni momento come va il mio immobile?</summary><div class="faq-body"><p>Sì, hai accesso a un'area riservata con occupazione, prenotazioni, spese, guadagni e ogni intervento svolto, sempre aggiornati.</p></div></details>
-    <details class="faq-item"><summary>Vivo fuori dalla Sicilia, posso comunque affidarvi l'immobile?</summary><div class="faq-body"><p>Sì, è proprio il caso più frequente: siamo noi sul posto e gestiamo tutto, tu segui l'andamento e verifichi il lavoro svolto da remoto.</p></div></details>
-    <details class="faq-item"><summary>Come gestite documenti e scadenze?</summary><div class="faq-body"><p>Monitoriamo assicurazioni, certificazioni e adempimenti dell'immobile e ti avvisiamo con anticipo prima di ogni scadenza, così non rischi mai di dimenticarla.</p></div></details>
-    <details class="faq-item"><summary>Sono obbligato ad affittare l'immobile?</summary><div class="faq-body"><p>No. Puoi affidarci solo la custodia e la gestione (documenti, scadenze, manutenzioni) oppure, se lo desideri, chiederci di occuparci anche dell'affitto e degli ospiti.</p></div></details>
-    <details class="faq-item"><summary>C'è un vincolo di durata?</summary><div class="faq-body"><p>Le condizioni contrattuali vengono definite insieme durante l'attivazione del servizio, in base alle tue esigenze.</p></div></details>
+<section id="faq" class="alt-bg reveal faq-refined">
+  <div class="faq-layout">
+    <div class="faq-intro"><div class="section-tag-wrap"><span class="section-tag">Domande frequenti</span></div><h2 class="section-title">Le risposte, senza complicazioni.</h2><p class="faq-subtitle">Abbiamo raccolto le domande che ci vengono poste più spesso. Apri quella che ti interessa per scoprire come lavoriamo.</p></div>
+    <div class="faq-list" aria-label="Domande frequenti">
+
+    <details class="faq-item"><summary data-number="01">Quanto costa il servizio di gestione?</summary><div class="faq-body"><p>Il costo dipende dalla tipologia di immobile e dal livello di servizio richiesto. Dopo una valutazione gratuita ti proponiamo una tariffa chiara, senza costi nascosti.</p></div></details>
+    <details class="faq-item"><summary data-number="02">Devo occuparmi io delle pulizie o della manutenzione?</summary><div class="faq-body"><p>No, coordiniamo noi pulizie e manutenzioni. Per gli interventi più importanti ricevi sempre un preventivo da approvare prima che venga eseguito.</p></div></details>
+    <details class="faq-item"><summary data-number="03">Posso vedere in ogni momento come va il mio immobile?</summary><div class="faq-body"><p>Sì, hai accesso a un'area riservata con occupazione, prenotazioni, spese, guadagni e ogni intervento svolto, sempre aggiornati.</p></div></details>
+    <details class="faq-item"><summary data-number="04">Vivo fuori dalla Sicilia, posso comunque affidarvi l'immobile?</summary><div class="faq-body"><p>Sì, è proprio il caso più frequente: siamo noi sul posto e gestiamo tutto, tu segui l'andamento e verifichi il lavoro svolto da remoto.</p></div></details>
+    <details class="faq-item"><summary data-number="05">Come gestite documenti e scadenze?</summary><div class="faq-body"><p>Monitoriamo assicurazioni, certificazioni e adempimenti dell'immobile e ti avvisiamo con anticipo prima di ogni scadenza, così non rischi mai di dimenticarla.</p></div></details>
+    <details class="faq-item"><summary data-number="06">Sono obbligato ad affittare l'immobile?</summary><div class="faq-body"><p>No. Puoi affidarci solo la custodia e la gestione (documenti, scadenze, manutenzioni) oppure, se lo desideri, chiederci di occuparci anche dell'affitto e degli ospiti.</p></div></details>
+    <details class="faq-item"><summary data-number="07">C'è un vincolo di durata?</summary><div class="faq-body"><p>Le condizioni contrattuali vengono definite insieme durante l'attivazione del servizio, in base alle tue esigenze.</p></div></details>
+  
+    </div>
   </div>
 </section>
 
