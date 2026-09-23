@@ -680,6 +680,22 @@
 /* Crop the caption baked into the image; the note below the screenshot was removed from HTML. */
 .owner-preview{aspect-ratio:1492 / 925;overflow:hidden}
 .owner-preview .owner-real-image{display:block;width:100%;height:auto;max-width:none;object-fit:initial;aspect-ratio:auto}
+
+/* ViverePM – four-stage property-management journey */
+#come-funziona.process-section{padding-top:100px;padding-bottom:105px}
+.process-timeline{position:relative;max-width:1030px;margin:56px auto 0;display:grid;gap:23px;padding-left:0}
+.process-timeline::before{content:"";position:absolute;left:29px;top:30px;bottom:30px;width:1px;background:linear-gradient(to bottom,var(--gold-deep),rgba(153,107,53,.19))}
+.process-step{display:grid;grid-template-columns:60px minmax(0,1fr);gap:22px;position:relative;align-items:start}
+.process-dot{width:15px;height:15px;border-radius:50%;background:var(--gold-deep);box-shadow:0 0 0 8px rgba(153,107,53,.10);margin:32px 0 0 22px;position:relative;z-index:1}
+.process-card{position:relative;padding:27px 35px 30px;border:1px solid var(--line);border-radius:19px;background:var(--paper);box-shadow:0 12px 36px rgba(23,61,54,.045);transition:transform .25s ease,box-shadow .25s ease}
+.process-card::before{content:"";position:absolute;width:3px;top:29px;bottom:29px;left:0;border-radius:0 3px 3px 0;background:var(--gold-deep);opacity:.65}
+.process-card:hover{transform:translateY(-3px);box-shadow:0 19px 42px rgba(23,61,54,.09)}
+.process-num{display:block;margin-bottom:10px;color:var(--gold-deep);font-size:11px;font-weight:700;letter-spacing:.22em}
+.process-card h3{font-family:'Playfair Display',Georgia,serif;color:var(--green-deep);font-size:clamp(24px,2.3vw,31px);line-height:1.24;margin:0 0 10px}
+.process-card p{font-size:15px;line-height:1.75;color:var(--ink-soft);margin:0;max-width:730px}
+@media(max-width:760px){#come-funziona.process-section{padding-top:70px;padding-bottom:75px}.process-timeline{margin-top:36px;gap:17px}.process-timeline::before{left:17px;top:25px;bottom:25px}.process-step{grid-template-columns:36px minmax(0,1fr);gap:13px}.process-dot{width:12px;height:12px;margin:26px 0 0 12px;box-shadow:0 0 0 6px rgba(153,107,53,.10)}.process-card{padding:22px 20px;border-radius:15px}.process-card h3{font-size:24px}.process-card p{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.process-card{transition:none}.process-card:hover{transform:none}}
+
 </style>
 </head>
 <body>
@@ -817,15 +833,15 @@
 </section>
 
 <section class="owner-story reveal" id="area-proprietari"><div class="owner-intro"><span class="section-tag">Votre espace propriétaire</span><h2 class="section-title">Votre maison. Vos décisions. Votre suivi.</h2><p class="section-sub">Même à distance, suivez votre bien au même endroit : activités, validations, réservations et rapports.</p></div><div class="owner-layout"><div class="owner-preview" aria-label="Aperçu illustratif de l’espace propriétaire"><img class="owner-real-image" src="anteprima_viverepm_con_vista_sul_mare.png?v=20260923c" alt="Anteprima grafica dell’Area Proprietari ViverePM con soggiorno vista mare" loading="lazy"><div class="owner-preview-bar"><i></i><i></i><i></i><span>Aperçu illustratif de l’espace propriétaire</span></div><div class="owner-preview-inner"><div class="owner-preview-side"><strong>ViverePM</strong><span>Votre bien en un coup d’œil</span><span>Documents</span></div><div class="owner-preview-main"><h3>Votre bien en un coup d’œil</h3><p>Aperçu illustratif de l’espace propriétaire</p><div class="owner-preview-tiles"><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><span>Calendrier et réservations</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-wallet"></use></svg><span>Recettes et dépenses</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-tool"></use></svg><span>Travaux à approuver</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-chat"></use></svg><span>Messages</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-document"></use></svg><span>Documents</span></div><div class="owner-preview-tile"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg><span>Dates personnelles</span></div></div></div></div></div><div class="owner-benefits"><div class="owner-benefit"><span class="owner-benefit-num">01</span><h3>Suivez chaque activité</h3><p>Les contrôles et l’entretien sont enregistrés pour un suivi à distance.</p></div><div class="owner-benefit"><span class="owner-benefit-num">02</span><h3>Validez les travaux à l’avance</h3><p>Consultez les devis et autorisez les travaux convenus avant leur exécution.</p></div><div class="owner-benefit"><span class="owner-benefit-num">03</span><h3>Gardez la maîtrise du calendrier</h3><p>Consultez les réservations et bloquez des dates pour vos séjours.</p></div><div class="owner-benefit"><span class="owner-benefit-num">04</span><h3>Documents et rapports réunis</h3><p>Retrouvez les fichiers du bien, les recettes et les dépenses au même endroit.</p></div><a class="owner-link" href="https://app.viverepm.it/">Accéder à votre espace propriétaire <span aria-hidden="true">→</span></a></div></div></section>
-<section id="come-funziona" class="alt-bg reveal">
+<section id="come-funziona" class="alt-bg reveal process-section">
   <div class="section-tag-wrap"><span class="section-tag">Comment ça marche</span></div>
-  <h2 class="section-title">Du premier contact à la gestion de votre bien</h2>
-  <p class="section-sub">Un parcours simple, pensé pour vous faire gagner du temps dès le premier jour.</p>
-  <div class="steps stagger">
-    <div class="step-card" style="--i:0"><span class="step-num">01</span><h3>Vous nous contactez</h3><p>Remplissez le formulaire ou écrivez-nous sur WhatsApp, même depuis l’étranger, avec quelques informations sur votre bien.</p></div>
-    <div class="step-card" style="--i:1"><span class="step-num">02</span><h3>Estimation gratuite</h3><p>Nous analysons le bien, les documents existants et les échéances à surveiller, et vous proposons une gestion sur mesure.</p></div>
-    <div class="step-card" style="--i:2"><span class="step-num">03</span><h3>Activation</h3><p>Nous définissons ensemble les termes du service et prenons en charge documents, échéances et état du bien.</p></div>
-    <div class="step-card" style="--i:3"><span class="step-num">04</span><h3>Nous prenons le relais</h3><p>À partir de là, nous nous occupons de tout : vous vérifiez chaque activité confortablement depuis votre espace privé.</p></div>
+  <h2 class="section-title">Du premier contact à la tranquillité d’esprit</h2>
+  <p class="section-sub">Un parcours simple et transparent : vous restez informé, nous gérons votre bien sur place.</p>
+  <div class="process-timeline">
+    <div class="process-step"><span class="process-dot" aria-hidden="true"></span><div class="process-card"><span class="process-num">01</span><h3>Parlez-nous de votre bien</h3><p>Remplissez le formulaire ou écrivez-nous sur WhatsApp. Nous vous écoutons pour comprendre vos besoins.</p></div></div>
+    <div class="process-step"><span class="process-dot" aria-hidden="true"></span><div class="process-card"><span class="process-num">02</span><h3>Nous le découvrons de près</h3><p>Nous examinons ensemble le bien, les documents et les besoins pratiques pour proposer une gestion sur mesure.</p></div></div>
+    <div class="process-step"><span class="process-dot" aria-hidden="true"></span><div class="process-card"><span class="process-num">03</span><h3>Nous organisons chaque détail</h3><p>Nous convenons des activités, autorisations, contrôles et modalités de gestion dès le départ.</p></div></div>
+    <div class="process-step"><span class="process-dot" aria-hidden="true"></span><div class="process-card"><span class="process-num">04</span><h3>Profitez de la vie, nous prenons soin de votre bien</h3><p>Suivez interventions, réservations, documents et rapports depuis votre espace privé, même à distance.</p></div></div>
   </div>
 </section>
 
