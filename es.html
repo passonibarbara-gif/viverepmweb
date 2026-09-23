@@ -755,6 +755,22 @@
 @media(max-width:470px){#faq.faq-refined .faq-item summary{grid-template-columns:25px minmax(0,1fr) 30px;gap:11px;padding:23px 0;font-size:19px}#faq.faq-refined .faq-item .faq-body{padding:0 0 25px 36px}#faq.faq-refined .faq-item .faq-body p{font-size:14px}}
 @media(prefers-reduced-motion:reduce){#faq.faq-refined .faq-item summary::after{transition:none}}
 
+
+/* Contact: Mediterranean imagery with existing lead form preserved */
+#contatti.contact-editorial .contact-shell{max-width:1170px;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(30px,4vw,65px);padding:clamp(23px,3.3vw,48px);border-radius:21px;align-items:start;box-shadow:0 22px 65px rgba(23,61,54,.085)}
+#contatti.contact-editorial .contact-info{min-width:0}
+#contatti.contact-editorial .contact-photo{margin:0 0 28px;border-radius:15px;overflow:hidden;aspect-ratio:5/4;background:#e8e2d5}
+#contatti.contact-editorial .contact-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+#contatti.contact-editorial .contact-info h2{color:var(--green-deep);font-size:clamp(27px,2.7vw,35px);margin:0 0 12px}
+#contatti.contact-editorial .contact-info>p{font-size:15px;line-height:1.7;font-weight:400;margin:0 0 23px}
+#contatti.contact-editorial .contact-info .info-row{align-items:flex-start;font-size:14px;line-height:1.6;overflow-wrap:anywhere}
+#contatti.contact-editorial .contact-info .info-row .icon{flex:none;margin-top:2px}
+#contatti.contact-editorial #leadForm{padding-top:5px}
+#contatti.contact-editorial .field input,#contatti.contact-editorial .field select,#contatti.contact-editorial .field textarea{background:#fff;border-radius:10px;min-height:46px}
+#contatti.contact-editorial .field textarea{min-height:100px}
+@media(max-width:850px){#contatti.contact-editorial .contact-shell{grid-template-columns:1fr;gap:30px}#contatti.contact-editorial .contact-photo{aspect-ratio:16/9}}
+@media(max-width:520px){#contatti.contact-editorial .contact-shell{padding:21px}#contatti.contact-editorial .contact-photo{aspect-ratio:4/3;margin-bottom:22px}#contatti.contact-editorial .field-row{grid-template-columns:1fr;gap:0}}
+
 </style>
 </head>
 <body>
@@ -951,13 +967,14 @@
   </div>
 </section>
 
-<section id="contatti" class="reveal">
+<section id="contatti" class="reveal contact-editorial">
   <div class="section-tag-wrap"><span class="section-tag">Contáctanos</span></div>
   <h2 class="section-title">Solicita una valoración gratuita</h2>
   <p class="section-sub">Cuéntanos algo sobre tu propiedad: te responderemos con una propuesta a medida.</p>
 
   <div class="contact-shell">
     <div class="contact-info">
+      <figure class="contact-photo"><img src="rifugio_mediterraneo_sul_mare.png" alt="Soggiorno mediterraneo aperto su una terrazza affacciata sul mare" loading="lazy" onerror="this.onerror=null;this.src='hero-terrazza.jpg'"></figure>
       <h2>Hablemos</h2>
       <p>Puedes escribirnos directamente o rellenar el formulario: te responderemos en 24 horas.</p>
       <div class="info-row"><svg class="icon"><use href="#i-phone"></use></svg><span id="waTextLine">WhatsApp: configura el número</span></div>
